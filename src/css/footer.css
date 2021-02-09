@@ -1,0 +1,29 @@
+.footer-main{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+}
+
+.part1 .span1 {
+    font-size:25px;
+    margin-left: 5px;
+}
+.part1 .span2 {
+    margin-left: 5px;
+}
+.part2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.part2 a {
+    margin-left:10px;
+}
+.vert-line {
+    display: inline-block;
+    height: 30px;
+    width: 2px;
+    margin-left: 10px;
+    background-color: honeydew;
+}
