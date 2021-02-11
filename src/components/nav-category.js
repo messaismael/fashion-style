@@ -1,6 +1,3 @@
-import {
-    Link
-  } from "react-router-dom";
 import { arrCategory } from './stock'
 import { Navbar, Nav } from 'react-bootstrap';
 

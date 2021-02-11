@@ -10,7 +10,7 @@ function HeroCarousel() {
                 {
                     heroData.map((item, i) => {
                         return (
-                            <Carousel.Item interval={50000} key={i}>
+                            <Carousel.Item interval={3000} key={i}>
                                 <img
                                     className="d-block w-100"
                                     src={item.cover}

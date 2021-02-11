@@ -1,5 +1,6 @@
 import '../css/category.css'
 import { dataItems } from './stock'
+import { Button } from 'react-bootstrap';
 
 
 function Category (props) {
@@ -10,8 +11,13 @@ function Category (props) {
                     return (
                         <div className="col-sm-3 col-md-3" key={i}>
                             <div className='item'>
-                                <div className='thumbnail'>
-                                    <img src={item.cover} alt={item.name} width='100%'/>
+                                <img src={item.cover} alt={item.name} width='100%'/>
+                                <div className='caption'>
+                                    <div className='d-flex justify-content-between item-info'>
+                                        <div className='item-name'>{ item.name }</div>
+                                        <div className='item-price'>${item.price}</div>
+                                    </div>
+                                    <Button variant='dark' type="button">Add to cart</Button>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { arrCategory } from './stock'
 
 
 
@@ -13,16 +16,19 @@ class NavBar extends React.Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#shop">Shop</Nav.Link>
+                            <Nav.Link href="#">Home</Nav.Link>
                             <Nav.Link href="#pages">Pages</Nav.Link>
                             <Nav.Link href="#blogs">Blogs</Nav.Link>
                             <NavDropdown title="Category" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#category/1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#category/2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#category/3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#category/4">Separated link</NavDropdown.Item>
+                            {
+                                arrCategory.map((category, i) => {
+                                    return (
+                                        <NavDropdown.Item href={"" + category} key={i} >
+                                            {category}
+                                        </NavDropdown.Item>
+                                    )
+                                })
+                            }
                             </NavDropdown>
                         </Nav>
                         <Nav>
@@ -30,8 +36,8 @@ class NavBar extends React.Component {
                                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                                 <Button variant="outline-light">Search</Button>
                             </Form>
-                            <Nav.Link href="#deets">Contact us</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
+                            <Nav.Link href="#Shopping"><FontAwesomeIcon icon={faShoppingCart} /></Nav.Link>
+                            <Nav.Link eventKey={2} href="#login">
                                 Login
                             </Nav.Link>
                         </Nav>
