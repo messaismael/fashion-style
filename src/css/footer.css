@@ -5,6 +5,7 @@
     text-align: center;
     min-height: 50px;
     line-height: 2.5;
+    font-size: 12px;
     padding: 7px 0 10px 0;
 }
 
@@ -16,11 +17,11 @@
 }
 .part1 .span1 {
     line-height: 1.2;
-    font-size:25px;
-    margin-left: 5px;
+    font-size:20px;
+    margin-right: 10px;
 }
 .part1 .span2 {
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .vert-line {

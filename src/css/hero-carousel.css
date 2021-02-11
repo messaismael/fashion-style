@@ -1,0 +1,12 @@
+/* center vetically and crop image */
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+.carousel-item img {
+    position:absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+

@@ -1,0 +1,13 @@
+
+.item {
+    max-height: 380px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.thumbnail {
+    padding: 5px;
+    border:1px solid red;
+    height: 50%;
+    overflow: hidden;
+}
