@@ -1,7 +1,6 @@
 .main{
-    border:0px solid black;
-    min-height: 90vh;
-    max-width: 80%;
+    border: 1px solid black;
     margin: auto;
-    margin-bottom: 30px;
+    min-height: 90vh;
+
 }

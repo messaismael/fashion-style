@@ -1,5 +1,6 @@
 import { arrCategory } from './stock'
 import { Navbar, Nav } from 'react-bootstrap';
+import { NavLink } from "react-router-dom";
 
 
 function NavCategory() {
@@ -10,9 +11,9 @@ function NavCategory() {
                         {
                             arrCategory.map((category, i) => {
                                 return (
-                                    <Nav.Link href={"/" + category} key={i} style={{ marginRight: "10px" }}>
+                                    <NavLink to={"/" + category} key={i}  className='nav-link' style={{ marginRight: "10px" }}>
                                        {category}
-                                    </Nav.Link>
+                                    </NavLink>
                                 )
                             })
                         }

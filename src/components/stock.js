@@ -1,3 +1,27 @@
+
+const homeData = [
+  {
+    id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+    category: "Shoes",
+    cover: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    name: "Aire NIke",
+    price: 10.95
+  },
+  {
+    id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
+    category: "Suit men",
+    cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/12/costume-homme-en-noir.jpg",
+    name: "Six button men's suit",
+    price: 50.99
+  },
+  {
+    id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
+    category: "Robes",
+    cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/10/Untitled-17-683x1024.jpg",
+    name: "Sexy blue puff sleeve mini dress",
+    price: 25.99
+  },
+]
 const heroData = [
   {
     id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
@@ -15,7 +39,7 @@ const heroData = [
   },
   {
     id: "0u96q42u-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Costumes",
+    category: "Suit men",
     cover: "https://thumbs.dreamstime.com/b/side-view-cool-dark-skinned-man-stylish-suit-touching-his-black-hat-looking-down-closeup-portrait-fashionable-african-170585815.jpg",
     name: "Cool african american man in black hat on dark background",
     price: 23.99
@@ -40,7 +64,7 @@ const stockData = [
   },
   {
     id: "0u96q42u-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Costumes",
+    category: "Suit men",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2019/07/Costume-Homme-un-bouton-couleur-noir.jpg",
     name: "Fashion style",
     price: 23.99
@@ -61,7 +85,7 @@ const stockData = [
   },
   {
     id: "3sbvndpe-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Costumes",
+    category: "Suit men",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/11/Veste-chic-pour-Homme-en-bleu-avec-des-rayures.jpg",
     name: "Fashion style",
     price: 25.99
@@ -82,7 +106,7 @@ const stockData = [
   },
   {
     id: "8u6lpj3e-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Costumes",
+    category: "Suit men",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/11/Veste-chic-pour-Homme-en-bleu-cintree.jpg",
     name: "Fashion style",
     price: 17.99
@@ -103,7 +127,7 @@ const stockData = [
   },
   {
     id: "bsx7u3xv-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Costumes",
+    category: "Suit men",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/11/Costume-chic-pour-Homme-en-violet.jpg",
     name: "Fashion style",
     price: 19
@@ -124,7 +148,7 @@ const stockData = [
   },
   {
     id: "tj8mc0yd-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Costumes",
+    category: "Suit men",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/11/Costume-Homme-deux-boutons-couleur-grise.jpg",
     name: "Fashion style",
     price: 45.98
@@ -145,7 +169,7 @@ const stockData = [
   },
   {
     id: "zceo3fdn-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Costumes",
+    category: "Suit men",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/11/Costume-Homme-Carrele-3-pieces-noir.jpg",
     name: "Fashion style",
     price: 90.99
@@ -180,6 +204,7 @@ stockData.map((item) => dataItems[item.category].push(item) );
 
 
 export {
+  homeData,
   heroData,
   dataItems,
   arrCategory,

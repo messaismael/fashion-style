@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel'
-import '../css/hero-carousel.css'
+import '../css/hero-carousel.scss'
 import { heroData } from './stock.js'
 
 

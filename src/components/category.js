@@ -9,9 +9,9 @@ function Category (props) {
             {
                 dataItems[props.category].map( (item, i) =>{
                     return (
-                        <div className="col-sm-3 col-md-3" key={i}>
+                        <div className="col-3 col-md-3" key={i}>
                             <div className='item'>
-                                <img src={item.cover} alt={item.name} width='100%'/>
+                                <img src={item.cover} alt={item.name} height='80%'/>
                                 <div className='caption'>
                                     <div className='d-flex justify-content-between item-info'>
                                         <div className='item-name'>{ item.name }</div>
