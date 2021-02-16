@@ -14,7 +14,7 @@ import { arrCategory } from './stock'
 class Main extends React.Component {
     render() {
         return (
-            <div className="container main">
+            <div className="main">
                 <HeroCarousel />
                 <Router>
                     <NavCategory />

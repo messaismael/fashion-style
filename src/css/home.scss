@@ -1,5 +1,6 @@
 .home{
     margin: auto;
+    padding-bottom: 100px;
 
     .block-text {
         text-align: left;
@@ -23,5 +24,49 @@
         }
     }
 
+    .countdown {
+        display: flex;
+        justify-content: center;
+        border:0px solid blue;
+    }
+    .date-item {
+        margin: 25px 20px;
+
+        .days, .hours, .mins, .secs{
+            width:48px;
+            height: 48px;
+            border-radius: 5px;
+            background-color: lightgray;
+            border:0px solid red;
+            font-size: 25px;
+        }
+        div{
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+    .img-container{
+        min-height: 270px;
+    }
+    .img-cover {
+        position: absolute;
+        top: 0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25%;
+
+        .offer-btn {
+            border-radius: 20px !important;
+        }
+    }
 
 }

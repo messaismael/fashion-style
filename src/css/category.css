@@ -2,17 +2,16 @@
 .item {
     position: relative;
     height: 380px;
+    min-width: ;
     border: 0px solid black;
     margin: 10px 0;
 }
-.thumbnail {
-    padding: 5px;
-    border:0px solid red;
-    height: 340px;
-    overflow: hidden;
+
+.item img{
+    height: 80%;
 }
 .caption {
-    height: 30%;
+    height: 20%;
     border: 0px solid blue;
 }
 .item-info {
