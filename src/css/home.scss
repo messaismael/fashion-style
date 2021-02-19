@@ -24,6 +24,17 @@
         }
     }
 
+    .all-categories {
+        .btn{
+            border-radius: 20px;
+            padding: 10px 15px;
+        }
+        a, a:hover {
+            text-decoration: none !important;
+            color: inherit;
+        }
+    }
+
     .promotion {
         padding:10px;
 
@@ -71,8 +82,9 @@
             justify-content: center;
             height: 25%;
     
-            .offer-btn {
+            .btn {
                 border-radius: 20px !important;
+                padding: 10px 15px;
             }
         }
 

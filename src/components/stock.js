@@ -18,7 +18,7 @@ const homeData = {
       },
       {
         id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
-        category: "Dress",
+        category: "Dresses",
         cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/10/Untitled-17-683x1024.jpg",
         name: "Sexy blue puff sleeve mini dress",
         price: 25.99
@@ -44,7 +44,7 @@ const heroData = [
   },
   {
     id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Dress",
+    category: "Dresses",
     cover: "https://images.unsplash.com/photo-1602809152986-301c078f5fc0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDIwfHxkcmVzc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     name: "Set of fashion model character Free Vector",
     price: 5.99
@@ -69,7 +69,7 @@ const stockData = [
   },
   {
     id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Dress",
+    category: "Dresses",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/09/robe-6-683x1024.jpg",
     name: "Fashion style",
     price: 5.99
@@ -90,7 +90,7 @@ const stockData = [
   },
   {
     id: "3k9zka2c-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Dress",
+    category: "Dresses",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/06/robe4.jpg",
     name: "Fashion style",
     price: 65.00
@@ -111,7 +111,7 @@ const stockData = [
   },
   {
     id: "623gsnj1-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Dress",
+    category: "Dresses",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/Robe-femme-evasee-black-and-white.png",
     name: "Fashion style",
     price: 49
@@ -132,7 +132,7 @@ const stockData = [
   },
   {
     id: "9vp96t5a-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Dress",
+    category: "Dresses",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/10/Untitled-17-683x1024.jpg",
     name: "Fashion style",
     price: 55.99
@@ -153,7 +153,7 @@ const stockData = [
   },
   {
     id: "q8qfaonc-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Dress",
+    category: "Dresses",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/09/Untitled-3-683x1024.jpg",
     name: "Fashion style",
     price: 80.99
@@ -174,7 +174,7 @@ const stockData = [
   },
   {
     id: "xfpwqd2u-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Dress",
+    category: "Dresses",
     cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/10/Untitled-19-683x1024.jpg",
     name: "Fashion style",
     price: 80.99

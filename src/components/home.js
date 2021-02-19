@@ -1,6 +1,5 @@
 import { homeData } from './stock'
 import { Button } from 'react-bootstrap'
-import { NavLink } from "react-router-dom";
 import '../css/home.scss'
 
 
@@ -28,8 +27,10 @@ function Home() {
                     })
                 }
             </div>
-            <div className='all-categories'>
-                <NavLink to={'/shop-categories'}> All Categories </NavLink>
+            <div className='all-categories mb-5'>
+                <Button  href={'/shop-categories'} variant='outline-secondary'>
+                    All Categories
+                </Button>
             </div>
             <div className='row promotion'>
                 <div className='col-12 col-md-6 mb-5'>
@@ -56,12 +57,12 @@ function Home() {
                             </div>
                         </div>
                         <div className='btn-container' >
-                            <Button className="offer-btn" variant={"primary"} >View Offers</Button>
+                            <Button variant={"secondary"} >View Offers</Button>
                         </div>
                     </div>
                 </div>
                 <div className='col-12 col-md-6 img-container mb-5' style={{ minHeight: "270px" }}>
-                        <div className='img-cover rounded' style={{ "backgroundImage": `url(https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80)` }}>
+                    <div className='img-cover rounded' style={{ "backgroundImage": `url(https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80)` }}>
                     </div>
                 </div>
             </div>

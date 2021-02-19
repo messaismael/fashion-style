@@ -1,4 +1,4 @@
-import '../css/category.css'
+import '../css/category.scss'
 import { dataItems } from './stock'
 import { Button } from 'react-bootstrap';
 
