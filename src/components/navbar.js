@@ -16,14 +16,14 @@ class NavBar extends React.Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href='/e-commerce-template/' >Home</Nav.Link>
                             <Nav.Link href="#pages">Pages</Nav.Link>
                             <Nav.Link href="#blogs">Blogs</Nav.Link>
                             <NavDropdown title="Category" id="collasible-nav-dropdown">
                             {
                                 arrCategory.map((category, i) => {
                                     return (
-                                        <NavDropdown.Item href={"" + category} key={i} >
+                                        <NavDropdown.Item href={"/e-commerce-template/" + category} key={i} >
                                             {category}
                                         </NavDropdown.Item>
                                     )

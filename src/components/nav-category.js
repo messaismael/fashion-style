@@ -11,7 +11,7 @@ function NavCategory() {
                         {
                             arrCategory.map((category, i) => {
                                 return (
-                                    <NavLink to={"/" + category} key={i}  className='nav-link' style={{ marginRight: "10px" }}>
+                                    <NavLink to={"/e-commerce-template/" + category} key={i}  className='nav-link' style={{ marginRight: "10px" }}>
                                        {category}
                                     </NavLink>
                                 )

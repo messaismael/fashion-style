@@ -20,13 +20,13 @@ class Main extends React.Component {
                     <NavCategory />
 
                     <Switch>
-                        <Route exact path='/'>
+                        <Route exact path='/e-commerce-template/'>
                             <Home />
                         </Route>
                         {
                             arrCategory.map((categ, i) => {
                                 return (
-                                    <Route path={"/"+ categ } key={i} >
+                                    <Route path={"/e-commerce-template/"+ categ } key={i} >
                                         <Category category={ categ } />
                                     </Route>
                                 )
