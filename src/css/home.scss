@@ -24,49 +24,72 @@
         }
     }
 
-    .countdown {
-        display: flex;
-        justify-content: center;
-        border:0px solid blue;
-    }
-    .date-item {
-        margin: 25px 20px;
+    .promotion {
+        padding:10px;
 
-        .days, .hours, .mins, .secs{
-            width:48px;
-            height: 48px;
-            border-radius: 5px;
-            background-color: lightgray;
-            border:0px solid red;
-            font-size: 25px;
+        .bg-light {
+            background-color: rgb(245, 245, 245) !important;
         }
-        div{
-            font-size: 12px;
-            text-transform: uppercase;
-        }
-    }
-    .img-container{
-        min-height: 270px;
-    }
-    .img-cover {
-        position: absolute;
-        top: 0;
-        left:0;
-        height: 100%;
-        width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .btn-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 25%;
 
-        .offer-btn {
-            border-radius: 20px !important;
+        .product-badge{
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            font-size: 15px;
+            color: rgba(255, 0, 0, 0.76);
+            border: 0px solid green;
+            padding: 10px;
         }
-    }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            border:0px solid blue;
+        
+            .date-item {
+                margin: 25px 5px;
+        
+                .days, .hours, .mins, .secs{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width:48px;
+                    height: 48px;
+                    border-radius: 5px;
+                    border:1px solid gray;
+                    font-size: 25px;
+                }
+                div{
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+            }
+        }
 
+        .btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 25%;
+    
+            .offer-btn {
+                border-radius: 20px !important;
+            }
+        }
+
+        .img-container{
+            border: 0px solid red;
+            padding: 15px;
+        }
+        .img-cover {
+            position: absolute;
+            top: 0;
+            left:15px;
+            height: 100%;
+            width: calc(100% - 30px);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+    }
 }
