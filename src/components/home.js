@@ -28,7 +28,7 @@ function Home() {
                 }
             </div>
             <div className='all-categories mb-5'>
-                <Button  href={'/shop-categories'} variant='outline-secondary'>
+                <Button href={'/shop-categories'} variant='outline-secondary'>
                     All Categories
                 </Button>
             </div>
@@ -67,7 +67,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className='row section3' style={{ "minHeight": '270px' }}>
+            <div className='row section3 mb-5' style={{ "minHeight": '270px' }}>
                 <div className='col-12 col-lg-12'>
                     <div className='img-cover rounded' style={{ "backgroundImage": `url(${homeData.section3.cover})` }}>
                         <div className='overlay'></div>
@@ -76,9 +76,36 @@ function Home() {
                                 <div className={`text${i}`}>{item}</div>
                             )
                         })}
-                        <Button href={'#contact'} className="rounded-btn mt-5" variant='outline-dark'>Locates Stores</Button></div>
+                            <Button href={'#contact'} className="rounded-btn mt-5" variant='outline-dark'>Locates Stores</Button></div>
                     </div>
                 </div>
+            </div>
+            <div className='mb-2'>
+                <h3>
+                    Featured Products
+                </h3>
+            </div>
+            <div className='row section4'>
+                {
+                    homeData.section4.map((item, i) => {
+                        return (
+                            <div className='col-12 col-sm-6 col-md-3' key={i}>
+                                <div className='item'>
+                                    <div className='product-card-thumb'>
+                                        <img src={item.cover} alt={item.name} />
+                                    </div>
+                                    <div className='caption'>
+                                        <div className='d-flex justify-content-between item-info'>
+                                            <div className='item-name'>{item.name}</div>
+                                            <div className='item-price'>${item.price}</div>
+                                        </div>
+                                        <Button className='rounded-btn' variant='outline-dark' type="button">Add to cart</Button>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
             </div>
         </div>
     )

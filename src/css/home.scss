@@ -19,7 +19,6 @@
             right: 0;
             bottom: 0;
             z-index: inherit;
-            border: 0px solid black;
             width: 30%;
         }
     }
@@ -54,7 +53,6 @@
         .countdown {
             display: flex;
             justify-content: center;
-            border:0px solid blue;
         
             .date-item {
                 margin: 25px 5px;
@@ -128,6 +126,13 @@
             .text2 {
                 font-size: 25px;
             }
+        }
+    }
+
+    .section4 {
+        padding: 5px;
+        .product-card-thumb{
+            height: 296px;
         }
     }
 }

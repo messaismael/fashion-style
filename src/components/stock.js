@@ -34,7 +34,37 @@ const homeData = {
   section3: {
     description: 'Old Collection&Huge Sale!&at outlet strores',
     cover:'https://images.unsplash.com/photo-1610398752829-e781c86378f0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
-  }
+  },
+  section4: [
+    {
+      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      category: "Bags",
+      cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/Sac-a-main-femme-deux-tons-camelle-et-piton.png",
+      name: "Blue shoes on a guy",
+      price: 10.95
+    },
+    {
+      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      category: "Bags",
+      cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/06/22-683x1024.gif",
+      name: "Blue shoes on a guy",
+      price: 10.95
+    },
+    {
+      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      category: "Bags",
+      cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/12/Sac-a-main-femme-transparent-en-couleur.jpg",
+      name: "Blue shoes on a guy",
+      price: 10.95
+    },
+    {
+      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      category: "Bags",
+      cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/09/sac-a-dos-3-piece-en-vente-au-cameroun-3-683x800.jpg",
+      name: "Blue shoes on a guy",
+      price: 10.95
+    },
+  ]
 }
 
 
