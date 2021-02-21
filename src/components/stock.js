@@ -30,6 +30,10 @@ const homeData = {
     cover: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80",
     name: "Nike Free",
     price: 25.99
+  },
+  section3: {
+    description: 'Old Collection&Huge Sale!&at outlet strores',
+    cover:'https://images.unsplash.com/photo-1610398752829-e781c86378f0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
   }
 }
 

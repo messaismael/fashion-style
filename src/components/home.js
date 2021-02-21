@@ -32,8 +32,8 @@ function Home() {
                     All Categories
                 </Button>
             </div>
-            <div className='row promotion'>
-                <div className='col-12 col-md-6 mb-5'>
+            <div className='row section2 mb-5'>
+                <div className='col-12 col-md-6 mb-2'>
                     <div className="rounded bg-light pb-5 position-relative">
                         <span className='product-badge'>LIMITED OFFER</span>
                         <h3 className="pt-5"> New </h3>
@@ -61,12 +61,25 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='col-12 col-md-6 img-container mb-5' style={{ minHeight: "270px" }}>
-                    <div className='img-cover rounded' style={{ "backgroundImage": `url(https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80)` }}>
+                <div className='col-12 col-md-6 img-container mb-2' style={{ minHeight: "270px" }}>
+                    <div className='img-cover rounded' style={{ "backgroundImage": `url(${homeData.section2.cover})` }}>
                     </div>
                 </div>
             </div>
 
+            <div className='row section3' style={{ "minHeight": '270px' }}>
+                <div className='col-12 col-lg-12'>
+                    <div className='img-cover rounded' style={{ "backgroundImage": `url(${homeData.section3.cover})` }}>
+                        <div className='overlay'></div>
+                        <div className="position-relative"> {homeData.section3.description.split('&').map((item, i) => {
+                            return (
+                                <div className={`text${i}`}>{item}</div>
+                            )
+                        })}
+                        <Button href={'#contact'} className="rounded-btn mt-5" variant='outline-dark'>Locates Stores</Button></div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
