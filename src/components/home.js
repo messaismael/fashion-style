@@ -83,14 +83,19 @@ function Home() {
                 </div>
             </div>
 
-            <div className='container-md section4'>
+            <div className='container-md section4 mb-5'>
                 <SoftSLider data={homeData['section4']} />
             </div>
-            <div className='row brand'>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div className='container-md mx-auto row section5'>
+                <div className='col-12 col-sm-6 col-md-4'>
+                    <h4>Top Sellers</h4>
+                </div>
+                <div className='col-12 col-sm-6 col-md-4'>
+                    <h4>New Arrivals</h4>
+                </div>
+                <div className='col-12 col-sm-6 col-md-4'>
+                    <h4>Bests Rated</h4>
+                </div>
             </div>
         </div>
     )
