@@ -1,5 +1,6 @@
 .home{
     margin: auto;
+    text-align: center;
     padding-bottom: 100px;
 
     .block-text {
@@ -133,6 +134,11 @@
         padding: 5px;
         .product-card-thumb{
             height: 296px;
+        }
+        .item {
+            border: 2px solid gray;
+            margin: 5px;
+            padding: 5px;
         }
     }
 }

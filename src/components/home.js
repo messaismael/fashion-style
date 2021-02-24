@@ -1,12 +1,14 @@
-import { homeData } from './stock'
 import { Button } from 'react-bootstrap'
 import '../css/home.scss'
+import { homeData } from './stock'
+import SoftSLider from './slick-slider'
+
 
 
 function Home() {
     return (
-        <div className='container-md home' >
-            <div className='row'>
+        <div className='home'>
+            <div className='container-md mx-auto row'>
                 {
                     homeData['section1'].map((item, i) => {
                         return (
@@ -32,7 +34,7 @@ function Home() {
                     All Categories
                 </Button>
             </div>
-            <div className='row section2 mb-5'>
+            <div className='container-md mx-auto row section2 mb-0'>
                 <div className='col-12 col-md-6 mb-2'>
                     <div className="rounded bg-light pb-5 position-relative">
                         <span className='product-badge'>LIMITED OFFER</span>
@@ -67,10 +69,10 @@ function Home() {
                 </div>
             </div>
 
-            <div className='row section3 mb-5' style={{ "minHeight": '270px' }}>
+            <div className='container-md mx-auto row section3 mb-5' style={{ "minHeight": '270px' }}>
                 <div className='col-12 col-lg-12'>
                     <div className='img-cover rounded' style={{ "backgroundImage": `url(${homeData.section3.cover})` }}>
-                        <div className='overlay'></div>
+                        <div className='overlay rounded'></div>
                         <div className="position-relative"> {homeData.section3.description.split('&').map((item, i) => {
                             return (
                                 <div className={`text${i}`}>{item}</div>
@@ -80,32 +82,15 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className='mb-2'>
-                <h3>
-                    Featured Products
-                </h3>
+
+            <div className='container-md section4'>
+                <SoftSLider data={homeData['section4']} />
             </div>
-            <div className='row section4'>
-                {
-                    homeData.section4.map((item, i) => {
-                        return (
-                            <div className='col-12 col-sm-6 col-md-3' key={i}>
-                                <div className='item'>
-                                    <div className='product-card-thumb'>
-                                        <img src={item.cover} alt={item.name} />
-                                    </div>
-                                    <div className='caption'>
-                                        <div className='d-flex justify-content-between item-info'>
-                                            <div className='item-name'>{item.name}</div>
-                                            <div className='item-price'>${item.price}</div>
-                                        </div>
-                                        <Button className='rounded-btn' variant='outline-dark' type="button">Add to cart</Button>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
+            <div className='row brand'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
     )
