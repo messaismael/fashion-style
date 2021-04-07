@@ -44,7 +44,7 @@ function SoftSlider(props) {
                 {
                     props.data.map((item, i) => {
                         return (
-                            <div>
+                            <div key={i}>
                                 <div className='item rounded'>
                                     <div className='product-card-thumb'>
                                         <img src={item.cover} alt={item.name} />

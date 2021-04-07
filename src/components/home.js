@@ -75,7 +75,7 @@ function Home() {
                         <div className='overlay rounded'></div>
                         <div className="position-relative"> {homeData.section3.description.split('&').map((item, i) => {
                             return (
-                                <div className={`text${i}`}>{item}</div>
+                                <div className={`text${i}`} key={i}>{item}</div>
                             )
                         })}
                             <Button href={'#contact'} className="rounded-btn mt-5" variant='outline-dark'>Locates Stores</Button></div>
@@ -88,13 +88,61 @@ function Home() {
             </div>
             <div className='container-md mx-auto row section5'>
                 <div className='col-12 col-sm-6 col-md-4'>
-                    <h4>Top Sellers</h4>
+                    <h4 className='widget-title'>Top Sellers</h4>
+                    {
+                        homeData['section4'].filter((item, i)=>( i < 3)).map((item, index) => {
+                            return (
+                                <div className='entry' key={index} >
+                                    <div className="entry-thumb">
+                                        <img src={item.cover} width='62' alt='entry thumb' />
+                                    </div>
+                                    <div className="entry-content">
+                                        <h6 className='entry-title'>{item.name}</h6>
+                                        <div className='entry-price'>${item.price}</div>
+                                    </div>
+                                </div>
+                            );
+                        })
+                    }
+                    
                 </div>
                 <div className='col-12 col-sm-6 col-md-4'>
-                    <h4>New Arrivals</h4>
+                    <h4 className='widget-title'>New Arrivals</h4>
+                    {
+                        homeData['section4'].filter((item, i)=>( i < 3)).map((item, index) => {
+                        
+                            return (
+                                <div className='entry' key={index} >
+                                    <div className="entry-thumb">
+                                        <img src={item.cover} width='62' alt='entry thumb' />
+                                    </div>
+                                    <div className="entry-content">
+                                        <h6 className='entry-title'>{item.name}</h6>
+                                        <div className='entry-price'>${item.price}</div>
+                                    </div>
+                                </div>
+                            );
+                        })
+                    }
                 </div>
                 <div className='col-12 col-sm-6 col-md-4'>
-                    <h4>Bests Rated</h4>
+                    <h4 className='widget-title'>Bests Rated</h4>
+                    {
+                        homeData['section4'].filter((item, i)=>( i < 3)).map((item, index) => {
+                        
+                            return (
+                                <div className='entry' key={index} >
+                                    <div className="entry-thumb">
+                                        <img src={item.cover} width='62' alt='entry thumb' />
+                                    </div>
+                                    <div className="entry-content">
+                                        <h6 className='entry-title'>{item.name}</h6>
+                                        <div className='entry-price'>${item.price}</div>
+                                    </div>
+                                </div>
+                            );
+                        })
+                    }
                 </div>
             </div>
         </div>

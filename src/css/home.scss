@@ -143,6 +143,33 @@
     }
 
     .section5 {
-        border:0px solid red;
+        border: 0px solid red;
+        text-align: left;
+        .widget-title{
+            border-bottom: 1px solid #e1e7ec;
+            color: #9da9b9;
+        }
+        .entry{
+            display: table;
+            width: 100%;
+        }
+        .entry-thumb {
+            display: flex;
+            justify-content: center;
+        }
+        .entry-content  {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .entry-title{
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 4px;
+            color: #374250;
+        }
+        .entry-price{
+            font-size: 13px;
+            color: #606975;
+        }
     }
 }
