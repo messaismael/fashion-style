@@ -71,24 +71,45 @@ const heroData = [
   {
     id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Shoes",
-    cover: "/e-commerce-template/images/heroImg1.webp",
+    cover: "/e-commerce-template/images/heroImg1.jpg",
     name: "Blue shoes on a guy",
     price: 10.95
   },
   {
     id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Dresses",
-    cover: "/e-commerce-template/images/heroImg2.webp",
+    cover: "/e-commerce-template/images/heroImg2.jpg",
     name: "Set of fashion model character Free Vector",
     price: 5.99
   },
   {
     id: "0u96q42u-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Suit men",
-    cover: "/e-commerce-template/images/heroImg3.webp",
+    cover: "/e-commerce-template/images/heroImg3.jpg",
     name: "Cool african american man in black hat on dark background",
     price: 23.99
-  }
+  },
+  {
+    id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+    category: "Shoes",
+    cover: "/e-commerce-template/images/heroImg4.jpg",
+    name: "Blue shoes on a guy",
+    price: 10.95
+  },
+  {
+    id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+    category: "Shoes",
+    cover: "/e-commerce-template/images/heroImg5.jpg",
+    name: "Blue shoes on a guy",
+    price: 10.95
+  },
+  {
+    id: "0u96q42u-d93b-11e8-9f8b-f2801f1b9fd1",
+    category: "Suit men",
+    cover: "/e-commerce-template/images/heroImg6.jpg",
+    name: "Cool african american man in black hat on dark background",
+    price: 23.99
+  },
 ]
 
 

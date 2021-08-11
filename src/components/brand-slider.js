@@ -6,9 +6,10 @@ import { brandList } from "../stock"
 function BrandSlider(props) {
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     arrows: false,
     speed: 500,
+    autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
@@ -41,13 +42,13 @@ function BrandSlider(props) {
 
   return (
     <div>
-      <h2>Featured Products</h2>
+      <h4>Featured Products</h4>
       <Slider {...settings}>
         {
           brandList.map((item, i) => {
             return (
               <div key={i}>
-                <div className=''>
+                <div className='brand-container'>
                   <img src={item.image} alt={item.name}/>
                 </div>
               </div>

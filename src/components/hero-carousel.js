@@ -5,7 +5,7 @@ import { heroData } from '../stock.js'
 
 function HeroCarousel() {
     return (
-        <div>
+        <div className="">
             <Carousel>
                 {
                     heroData.map((item, i) => {

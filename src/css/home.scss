@@ -7,6 +7,10 @@
         text-align: left;
     }
 
+    .container{
+        max-width: 1500px;
+    }
+    
     .home-block {
         position: relative;
         border: 1px solid black;
@@ -143,7 +147,6 @@
     }
 
     .section5 {
-        border: 1px solid red;
         text-align: left;
         .widget-title{
             border-bottom: 1px solid #e1e7ec;
@@ -170,6 +173,16 @@
         .entry-price{
             font-size: 13px;
             color: #606975;
+        }
+    }
+    
+    .section6 {
+        .brand-container img {
+            margin: auto;
+            width: 30%;
+            @media only screen and (max-width:768px){
+                width: 55%;
+            }
         }
     }
 }
