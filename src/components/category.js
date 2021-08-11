@@ -1,5 +1,5 @@
 import '../css/category.scss'
-import { dataItems } from './stock'
+import { dataItems } from '../stock'
 import { Button } from 'react-bootstrap';
 
 

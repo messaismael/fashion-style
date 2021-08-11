@@ -9,7 +9,7 @@ import Home from './home'
 import HeroCarousel from './hero-carousel';
 import NavCategory from './nav-category'
 import Category from './category'
-import { arrCategory } from './stock'
+import { arrCategory } from '../stock'
 
 class Main extends React.Component {
     render() {

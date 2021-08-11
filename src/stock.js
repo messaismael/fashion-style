@@ -1,66 +1,65 @@
 
 const homeData = {
-  section1:
-    [
-      {
-        id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
-        category: "Shoes",
-        cover: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        name: "Aire NIke",
-        price: 10.95
-      },
-      {
-        id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
-        category: "Suit men",
-        cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/12/costume-homme-en-noir.jpg",
-        name: "Six button men's suit",
-        price: 50.99
-      },
-      {
-        id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
-        category: "Dresses",
-        cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/10/Untitled-17-683x1024.jpg",
-        name: "Sexy blue puff sleeve mini dress",
-        price: 25.99
-      },
-    ],
+  section1: [
+    {
+      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      category: "Shoes",
+      cover: "/e-commerce-template/images/s1img1.webp",
+      name: "Aire NIke",
+      price: 10.95
+    },
+    {
+      id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
+      category: "Suit men",
+      cover: "/e-commerce-template/images/s1img2.jpg",
+      name: "Six button men's suit",
+      price: 50.99
+    },
+    {
+      id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
+      category: "Dresses",
+      cover: "/e-commerce-template/images/s1img3.jpg",
+      name: "Sexy blue puff sleeve mini dress",
+      price: 25.99
+    },
+  ],
   section2: {
     id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Shoes",
-    cover: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80",
+    cover: "/e-commerce-template/images/s2img1.webp",
     name: "Nike Free",
     price: 25.99
   },
   section3: {
     description: 'Old Collection&Huge Sale!&at outlet strores',
-    cover:'https://images.unsplash.com/photo-1610398752829-e781c86378f0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+    cover: "/e-commerce-template/images/s3img1.webp"
   },
   section4: [
     {
       id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Bags",
-      cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/Sac-a-main-femme-deux-tons-camelle-et-piton.png",
+      cover: "/e-commerce-template/images/s4img1.png",
       name: "Blue shoes on a guy",
       price: 10.95
     },
     {
       id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Bags",
-      cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/06/22-683x1024.gif",
+      cover: "/e-commerce-template/images/s4img2.gif",
       name: "Blue shoes on a guy",
       price: 10.95
     },
     {
       id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Bags",
-      cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/12/Sac-a-main-femme-transparent-en-couleur.jpg",
+      cover: "/e-commerce-template/images/s4img3.jpg",
       name: "Blue shoes on a guy",
       price: 10.95
     },
     {
       id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Bags",
-      cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/09/sac-a-dos-3-piece-en-vente-au-cameroun-3-683x800.jpg",
+      cover: "/e-commerce-template/images/s4img4.jpg",
       name: "Blue shoes on a guy",
       price: 10.95
     },
@@ -72,21 +71,21 @@ const heroData = [
   {
     id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Shoes",
-    cover: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fHNob2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    cover: "/e-commerce-template/images/heroImg1.webp",
     name: "Blue shoes on a guy",
     price: 10.95
   },
   {
     id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Dresses",
-    cover: "https://images.unsplash.com/photo-1602809152986-301c078f5fc0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDIwfHxkcmVzc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    cover: "/e-commerce-template/images/heroImg2.webp",
     name: "Set of fashion model character Free Vector",
     price: 5.99
   },
   {
     id: "0u96q42u-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Suit men",
-    cover: "https://images.unsplash.com/photo-1481608726045-7407244fb7b6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjAzfHxtZW4lMjBzdWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    cover: "/e-commerce-template/images/heroImg3.webp",
     name: "Cool african american man in black hat on dark background",
     price: 23.99
   }
@@ -229,6 +228,37 @@ const stockData = [
   }
 ]
 
+const brandList = [
+  {
+    name:'1',
+    image: "/e-commerce-template/images/brands/01.png"
+  },
+  {
+    name:'2',
+    image:"/e-commerce-template/images/brands/02.png"
+  },
+  {
+    name:'3',
+    image:"/e-commerce-template/images/brands/03.png"
+  },
+  {
+    name:'4',
+    image:"/e-commerce-template/images/brands/04.png"
+  },
+  {
+    name:'5',
+    image:"/e-commerce-template/images/brands/05.png"
+  },
+  {
+    name:'6',
+    image:"/e-commerce-template/images/brands/06.png"
+  },
+  {
+    name:'7',
+    image:"/e-commerce-template/images/brands/07.png"
+  }
+]
+
 // make an array of different category
 const arrCategory = Object.keys(stockData.map((item) => item.category).reduce((a, categ) => {
   a[categ] = a[categ] + 1 || 1;
@@ -252,6 +282,7 @@ stockData.map((item) => dataItems[item.category].push(item));
 export {
   homeData,
   heroData,
+  brandList,
   dataItems,
   arrCategory,
 }

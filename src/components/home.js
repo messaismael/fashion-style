@@ -1,7 +1,8 @@
 import { Button } from 'react-bootstrap'
 import '../css/home.scss'
-import { homeData } from './stock'
+import { homeData } from '../stock'
 import SoftSLider from './slick-slider'
+import BrandSlider from './brand-slider'
 
 
 
@@ -104,7 +105,6 @@ function Home() {
                             );
                         })
                     }
-                    
                 </div>
                 <div className='col-12 col-sm-6 col-md-4'>
                     <h4 className='widget-title'>New Arrivals</h4>
@@ -144,6 +144,9 @@ function Home() {
                         })
                     }
                 </div>
+            </div>
+            <div>
+                <BrandSlider/>
             </div>
         </div>
     )
