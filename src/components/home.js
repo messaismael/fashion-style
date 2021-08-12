@@ -1,10 +1,11 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import '../css/home.scss'
 import { homeData } from '../stock'
 import SoftSLider from './slick-slider'
 import HeroCarousel from './hero-carousel';
 import BrandSlider from './brand-slider'
 import NavCategory from './nav-category'
+
+import '../css/home.scss'
 
 
 
@@ -12,7 +13,7 @@ import NavCategory from './nav-category'
 function Home() {
     return (
         <div className='home'>
-            <Container>
+            <Container fluid>
                 <HeroCarousel />
                 <NavCategory />
             </Container>

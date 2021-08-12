@@ -1,53 +1,51 @@
-import React from 'react';
+import React, { useState }from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import { arrCategory } from '../stock'
+import '../css/nav-bar.scss'
 
 
 
-class NavBar extends React.Component {
+function NavBar () {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-    render() {
-        return (
-            <div>
-                <Navbar collapseOnSelect expand="md" bg="dark"  variant="dark">
-                    <Container>
-                        <Navbar.Brand href="#home">Fashion Style</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Navbar.Collapse id="responsive-navbar-nav">
+    return (
+        <div id="menu-bar">
+            <Navbar collapseOnSelect expand="md" bg="dark"  variant="dark">
+                <Container>
+                    <Navbar.Brand href="#home"> Fashion Style </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
-                                <Nav.Link href='/e-commerce-template/' >Home</Nav.Link>
-                                <Nav.Link href="#pages">Pages</Nav.Link>
-                                <Nav.Link href="#blogs">Blogs</Nav.Link>
-                                <NavDropdown title="Category" id="collasible-nav-dropdown">
-                                {
-                                    arrCategory.map((category, i) => {
-                                        return (
-                                            <NavDropdown.Item href={"/e-commerce-template/" + category} key={i} >
-                                                {category}
-                                            </NavDropdown.Item>
-                                        )
-                                    })
-                                }
-                                </NavDropdown>
+                            <Form inline>
+                                <FormControl type="text" placeholder="Search..." className="mr-sm-2 nav-form" />
+                            </Form>
                             </Nav>
-                            <Nav>
-                                <Form inline>
-                                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                                    <Button variant="outline-light">Search</Button>
-                                </Form>
-                                <Nav.Link href="#Shopping"><FontAwesomeIcon icon={faShoppingCart} /></Nav.Link>
-                                <Nav.Link eventKey={2} href="#login">
-                                    Login
-                                </Nav.Link>
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Container>
-                </Navbar>
-            </div>
-        )
-    };
+                        <Nav>
+                        <Nav.Link href='/e-commerce-template/' >Home</Nav.Link>
+                            <Nav.Link href="/e-commerce-template/">Pages</Nav.Link>
+                            <Nav.Link href="#blogs">Blogs</Nav.Link>
+                            <NavDropdown title="Category" id="collasible-nav-dropdown">
+                            {
+                                arrCategory.map((category, i) => {
+                                    return (
+                                        <NavDropdown.Item href={"/e-commerce-template/" + category} key={i} >
+                                            {category}
+                                        </NavDropdown.Item>
+                                    )
+                                })
+                            }
+                            </NavDropdown>
+                            { !isLoggedIn && <Nav.Link eventKey={2} href="#login">Login</Nav.Link> }
+                            { isLoggedIn && <Nav.Link href="#profile"> <FontAwesomeIcon  icon={faUserCircle} size="lg"/></Nav.Link> }
+                            <Nav.Link href="#Shopping"><FontAwesomeIcon  className="mr-1" icon={faShoppingCart} size="sm" /> cart[0] </Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </div>
+    )
 }
 
 export default NavBar;
