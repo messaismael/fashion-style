@@ -1,12 +1,12 @@
-import '../css/footer.css'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
+import '../css/footer.css'
 
-function Footer() {
+const Footer = () => {
     return (
         <div>
             <Container fluid>

@@ -1,9 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel'
+import { heroData } from '../data'
+
 import '../css/hero-carousel.scss'
-import { heroData } from '../stock.js'
 
-
-function HeroCarousel() {
+const HeroCarousel = () => {
     return (
         <div className="">
             <Carousel>

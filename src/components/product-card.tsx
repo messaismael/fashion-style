@@ -1,18 +1,22 @@
 import { Button } from 'react-bootstrap'
 import '../css/product-card.scss'
 
-function ProductCard (props) {
+type Props = {
+  product:any
+}
+
+const ProductCard = ({product}:Props) => {
   
   return(
     <>
       <div className='item rounded'>
         <div className='product-card-thumb'>
-            <img src={props.product.cover} alt={props.product.name} />
+            <img src={product.cover} alt={product.name} />
         </div>
         <div className='caption'>
             <div className='d-flex justify-content-between item-info'>
-                <div className='item-name'>{props.product.name}</div>
-                <div className='item-price'>${props.product.price}</div>
+                <div className='item-name'>{product.name}</div>
+                <div className='item-price'>${product.price}</div>
             </div>
             <Button className='rounded-btn' variant='outline-dark' type="button">Add to cart</Button>
         </div>

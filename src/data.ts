@@ -280,23 +280,17 @@ const brandList = [
   }
 ]
 
-// make an array of different category
-const arrCategory = Object.keys(stockData.map((item) => item.category).reduce((a, categ) => {
-  a[categ] = a[categ] + 1 || 1;
-  return a
-}, {}));
+// get list of categories
+let categoryList: string[] = [];
+stockData.map((item) => categoryList.indexOf(item.category)<0? categoryList.push(item.category):"" );
+
 
 // An object with category as keys and occurence number as value 
-let dataItems = stockData.map((item) => item.category).reduce((a, categ) => {
-  a[categ] = a[categ] + 1 || 1;
-  return a
-}, {})
-
-// make all values as empty array from "dataItems"
-arrCategory.map(categ => dataItems[categ] = []);
+let productByCateg:any = {}; 
+categoryList.map( e => productByCateg[e] = [] ) // {categ1:[], categ2:[]}
 
 // group items based on their category
-stockData.map((item) => dataItems[item.category].push(item));
+stockData.map((item) => productByCateg[item.category].push(item));
 
 
 
@@ -304,6 +298,6 @@ export {
   homeData,
   heroData,
   brandList,
-  dataItems,
-  arrCategory,
+  productByCateg,
+  categoryList,
 }

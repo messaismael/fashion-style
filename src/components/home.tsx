@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import { homeData } from '../stock'
+import { homeData } from '../data'
 import SoftSLider from './slick-slider'
 import HeroCarousel from './hero-carousel';
 import BrandSlider from './brand-slider'
@@ -10,7 +10,7 @@ import '../css/home.scss'
 
 
 
-function Home() {
+const Home = () => {
     return (
         <div className='home'>
             <Container fluid>

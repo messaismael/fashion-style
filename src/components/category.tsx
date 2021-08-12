@@ -1,13 +1,16 @@
 import '../css/category.scss'
-import { dataItems } from '../stock'
 import { Button } from 'react-bootstrap';
+import { productByCateg } from '../data';
 
+type Props = {
+    category:string
+}
 
-function Category(props) {
+const Category = ({category}:Props) => {
     return (
         <div className='container row' style={{ margin: 'auto' }}>
             {
-                dataItems[props.category].map((item, i) => {
+                productByCateg[category].map((item:any, i:number) => {
                     return (
                         <div className="col-12 col-sm-4 col-md-3 mb-3" key={i}>
                             <div className='item'>

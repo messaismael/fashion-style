@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import NavBar from './components/navbar';
 import Footer from './components/footer'
-import Main from './components/main.js'
+import Main from './components/main';
 
 
 

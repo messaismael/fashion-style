@@ -2,12 +2,12 @@ import React, { useState }from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faUserCircle } from '@fortawesome/free-solid-svg-icons'
-import { arrCategory } from '../stock'
+import { categoryList } from '../data';
+
 import '../css/nav-bar.scss'
 
 
-
-function NavBar () {
+const  NavBar = ()  => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     return (
@@ -28,7 +28,7 @@ function NavBar () {
                             <Nav.Link href="#blogs">Blogs</Nav.Link>
                             <NavDropdown title="Category" id="collasible-nav-dropdown">
                             {
-                                arrCategory.map((category, i) => {
+                                categoryList.map((category, i) => {
                                     return (
                                         <NavDropdown.Item href={"/e-commerce-template/" + category} key={i} >
                                             {category}

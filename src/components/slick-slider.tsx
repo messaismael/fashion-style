@@ -2,8 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import ProductCard from './product-card'
 
+type Props = {
+  data:any
+}
 
-function SoftSlider(props) {
+function SoftSlider({data}:Props) {
   const settings = {
     dots: true,
     infinite: false,
@@ -44,7 +47,7 @@ function SoftSlider(props) {
         <h2>Featured Products</h2>
         <Slider {...settings}>
             {
-                props.data.map((product, i) => {
+                data.map((product:any, i:number) => {
                     return (
                         <div key={i}>
                             <ProductCard product={product} />

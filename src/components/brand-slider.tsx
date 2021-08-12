@@ -1,9 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import { brandList } from "../stock"
+import { brandList } from "../data";
 
-
-function BrandSlider(props) {
+const BrandSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
