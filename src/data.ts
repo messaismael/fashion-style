@@ -4,21 +4,21 @@ const homeData = {
     {
       id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Shoes",
-      cover: "/e-commerce-template/images/s1img1.webp",
+      cover: "/images/s1img1.webp",
       name: "Aire NIke",
       price: 10.95
     },
     {
       id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Suit men",
-      cover: "/e-commerce-template/images/s1img2.jpg",
+      cover: "/images/s1img2.jpg",
       name: "Six button men's suit",
       price: 50.99
     },
     {
       id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Dresses",
-      cover: "/e-commerce-template/images/s1img3.jpg",
+      cover: "/images/s1img3.jpg",
       name: "Sexy blue puff sleeve mini dress",
       price: 25.99
     },
@@ -26,40 +26,40 @@ const homeData = {
   section2: {
     id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Shoes",
-    cover: "/e-commerce-template/images/s2img1.webp",
+    cover: "/images/s2img1.webp",
     name: "Nike Free",
     price: 25.99
   },
   section3: {
     description: 'Old Collection&Huge Sale!&at outlet strores',
-    cover: "/e-commerce-template/images/s3img1.webp"
+    cover: "/images/s3img1.webp"
   },
   section4: [
     {
       id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Bags",
-      cover: "/e-commerce-template/images/s4img1.png",
+      cover: "/images/s4img1.png",
       name: "Blue shoes on a guy",
       price: 10.95
     },
     {
       id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Bags",
-      cover: "/e-commerce-template/images/s4img2.gif",
+      cover: "/images/s4img2.gif",
       name: "Blue shoes on a guy",
       price: 10.95
     },
     {
       id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Bags",
-      cover: "/e-commerce-template/images/s4img3.jpg",
+      cover: "/images/s4img3.jpg",
       name: "Blue shoes on a guy",
       price: 10.95
     },
     {
       id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Bags",
-      cover: "/e-commerce-template/images/s4img4.jpg",
+      cover: "/images/s4img4.jpg",
       name: "Blue shoes on a guy",
       price: 10.95
     },
@@ -71,42 +71,42 @@ const heroData = [
   {
     id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Shoes",
-    cover: "/e-commerce-template/images/heroImg1.jpg",
+    cover: "/images/heroImg1.jpg",
     name: "Blue shoes on a guy",
     price: 10.95
   },
   {
     id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Dresses",
-    cover: "/e-commerce-template/images/heroImg2.jpg",
+    cover: "/images/heroImg2.jpg",
     name: "Set of fashion model character Free Vector",
     price: 5.99
   },
   {
     id: "0u96q42u-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Suit men",
-    cover: "/e-commerce-template/images/heroImg3.jpg",
+    cover: "/images/heroImg3.jpg",
     name: "Cool african american man in black hat on dark background",
     price: 23.99
   },
   {
     id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Shoes",
-    cover: "/e-commerce-template/images/heroImg4.jpg",
+    cover: "/images/heroImg4.jpg",
     name: "Blue shoes on a guy",
     price: 10.95
   },
   {
     id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Shoes",
-    cover: "/e-commerce-template/images/heroImg5.jpg",
+    cover: "/images/heroImg5.jpg",
     name: "Blue shoes on a guy",
     price: 10.95
   },
   {
     id: "0u96q42u-d93b-11e8-9f8b-f2801f1b9fd1",
     category: "Suit men",
-    cover: "/e-commerce-template/images/heroImg6.jpg",
+    cover: "/images/heroImg6.jpg",
     name: "Cool african american man in black hat on dark background",
     price: 23.99
   },
@@ -252,31 +252,31 @@ const stockData = [
 const brandList = [
   {
     name:'1',
-    image: "/e-commerce-template/images/brands/01.png"
+    image: "/images/brands/01.png"
   },
   {
     name:'2',
-    image:"/e-commerce-template/images/brands/02.png"
+    image:"/images/brands/02.png"
   },
   {
     name:'3',
-    image:"/e-commerce-template/images/brands/03.png"
+    image:"/images/brands/03.png"
   },
   {
     name:'4',
-    image:"/e-commerce-template/images/brands/04.png"
+    image:"/images/brands/04.png"
   },
   {
     name:'5',
-    image:"/e-commerce-template/images/brands/05.png"
+    image:"/images/brands/05.png"
   },
   {
     name:'6',
-    image:"/e-commerce-template/images/brands/06.png"
+    image:"/images/brands/06.png"
   },
   {
     name:'7',
-    image:"/e-commerce-template/images/brands/07.png"
+    image:"/images/brands/07.png"
   }
 ]
 

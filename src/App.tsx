@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import NavBar from './components/navbar';
 import Footer from './components/footer'
-import Main from './components/main';
+import RouteViews from './pages/routes';
 
 
 
@@ -13,7 +13,7 @@ function App() {
     <div className="app">
       <div className='container-fluid'>
         <NavBar />
-        <Main />
+        <RouteViews />
         <Footer />
       </div>
     </div>

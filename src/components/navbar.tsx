@@ -7,7 +7,7 @@ import { categoryList } from '../data';
 import '../css/nav-bar.scss'
 
 
-const  NavBar = ()  => {
+const  NavBar:React.FC = ()  => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     return (
@@ -23,21 +23,21 @@ const  NavBar = ()  => {
                             </Form>
                             </Nav>
                         <Nav>
-                        <Nav.Link href='/e-commerce-template/' >Home</Nav.Link>
-                            <Nav.Link href="/e-commerce-template/">Pages</Nav.Link>
+                        <Nav.Link href='/' >Home</Nav.Link>
+                            <Nav.Link href="#pages">Pages</Nav.Link>
                             <Nav.Link href="#blogs">Blogs</Nav.Link>
                             <NavDropdown title="Category" id="collasible-nav-dropdown">
                             {
                                 categoryList.map((category, i) => {
                                     return (
-                                        <NavDropdown.Item href={"/e-commerce-template/" + category} key={i} >
+                                        <NavDropdown.Item href={"/" + category} key={i} >
                                             {category}
                                         </NavDropdown.Item>
                                     )
                                 })
                             }
                             </NavDropdown>
-                            { !isLoggedIn && <Nav.Link eventKey={2} href="#login">Login</Nav.Link> }
+                            { !isLoggedIn && <Nav.Link eventKey={2} href="/login">Login</Nav.Link> }
                             { isLoggedIn && <Nav.Link href="#profile"> <FontAwesomeIcon  icon={faUserCircle} size="lg"/></Nav.Link> }
                             <Nav.Link href="#Shopping"><FontAwesomeIcon  className="mr-1" icon={faShoppingCart} size="sm" /> cart[0] </Nav.Link>
                         </Nav>

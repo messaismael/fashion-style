@@ -1,14 +1,11 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { homeData } from '../data'
-import SoftSLider from './slick-slider'
-import HeroCarousel from './hero-carousel';
-import BrandSlider from './brand-slider'
-import NavCategory from './nav-category'
+import SoftSLider from '../components/slick-slider'
+import HeroCarousel from '../components/hero-carousel';
+import BrandSlider from '../components/brand-slider'
+import NavCategory from '../components/nav-category'
 
 import '../css/home.scss'
-
-
-
 
 const Home = () => {
     return (

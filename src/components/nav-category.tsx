@@ -11,7 +11,7 @@ const NavCategory = () =>{
                         {
                             categoryList.map((category, i) => {
                                 return (
-                                    <NavLink to={"/e-commerce-template/" + category} key={i}  className='nav-link' style={{ marginRight: "10px" }}>
+                                    <NavLink to={"/" + category} key={i}  className='nav-link' style={{ marginRight: "10px" }}>
                                        {category}
                                     </NavLink>
                                 )
