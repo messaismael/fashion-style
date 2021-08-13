@@ -1,4 +1,28 @@
  #login {
    min-height: 90vh;
-   
+   margin: 5px auto;
+   text-align: left;
+   .logo-container{
+      background-image: url(https://images.pexels.com/photos/3806603/pexels-photo-3806603.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);      object-fit: cover;
+      background-size: cover;
+      height: 90vh;
+      text-align: center;
+      img{
+        text-align: center;
+        object-fit: contain;
+        opacity: 0.9;
+        width: 40%;
+      }
+   }
+   .login-form{
+     .form-title{
+       margin-bottom: 50px;
+       text-align: center;
+     }
+     .register-text{
+       font-size: 15px;
+     }
+     padding: 30px;
+     width: 95%;
+   }
  }

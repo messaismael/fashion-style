@@ -1,8 +1,9 @@
 import React, { useState }from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Form, FormControl, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import { categoryList } from '../data';
+import Logo from './logo';
 
 import '../css/nav-bar.scss'
 
@@ -14,16 +15,19 @@ const  NavBar:React.FC = ()  => {
         <div id="menu-bar">
             <Navbar collapseOnSelect expand="md" bg="dark"  variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home"> Fashion Style </Navbar.Brand>
+                    <Navbar.Brand className="nav-logo" href="/home">
+                        <Logo/>
+                        <span className='ml-1'> Fashion Style</span>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
-                            <Form inline>
+                            {/* <Form inline>
                                 <FormControl type="text" placeholder="Search..." className="mr-sm-2 nav-form" />
-                            </Form>
+                            </Form> */}
                             </Nav>
                         <Nav>
-                        <Nav.Link href='/' >Home</Nav.Link>
+                            <Nav.Link href='/home' >Home</Nav.Link>
                             <Nav.Link href="#pages">Pages</Nav.Link>
                             <Nav.Link href="#blogs">Blogs</Nav.Link>
                             <NavDropdown title="Category" id="collasible-nav-dropdown">
