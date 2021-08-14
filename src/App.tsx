@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="app">
       <div className='container-fluid'>
-        <NavBar />
+        {/* s */}
         <RouteViews />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

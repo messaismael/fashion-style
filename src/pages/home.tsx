@@ -7,7 +7,7 @@ import NavCategory from '../components/nav-category'
 
 import '../css/home.scss'
 
-const Home = () => {
+const Home:React.FC = () => {
     return (
         <div className='home'>
             <Container fluid>
