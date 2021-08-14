@@ -12,7 +12,7 @@ const Register:React.FC = () => {
             <Row className='box-container shadow-lg bg-white'>
                 <Col md={7} className='pl-0 pr-1'>
                     <div className='logo-container mb-4'>
-                        <Logo/>
+                        <Link to="/home"><Logo/></Link>
                     </div>
                 </Col>
                 <Col md={5} className='d-flex align-items-center justify-content-center'>
