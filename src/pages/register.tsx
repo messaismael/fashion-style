@@ -15,7 +15,7 @@ const Register:React.FC = () => {
                         <Link to="/home"><Logo/></Link>
                     </div>
                 </Col>
-                <Col md={5} className='d-flex align-items-center justify-content-center'>
+                <Col md={5} className='pl-0 pr-0 d-flex align-items-center justify-content-center'>
                     <div className='shadow p-3 mt-5 mb-5 bg-white rounded register-form'>
                         <h1 className='form-title'>Create an Account</h1>
                     <Form >
