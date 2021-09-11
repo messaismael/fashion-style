@@ -45,6 +45,13 @@ const homeData = {
     {
       id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
       category: "Bags",
+      cover: "/images/s4img1.png",
+      name: "Blue shoes on a guy",
+      price: 10.95
+    },
+    {
+      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      category: "Bags",
       cover: "/images/s4img2.gif",
       name: "Blue shoes on a guy",
       price: 10.95

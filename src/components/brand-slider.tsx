@@ -9,7 +9,7 @@ const BrandSlider = () => {
     arrows: false,
     speed: 500,
     autoplay: true,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
       {

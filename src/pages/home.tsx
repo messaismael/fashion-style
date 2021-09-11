@@ -104,10 +104,10 @@ const Home:React.FC = () => {
                     </Row>
                 </Container>
 
-                <div className='container-md section4 mb-5'>
+                <Container className='section4 mb-5'>
                     <SoftSLider data={homeData['section4']} />
-                </div>
-                <div className='container-md mx-auto row section5'>
+                </Container>
+                <div className='container mx-auto row section5'>
                     <div className='col-12 col-sm-6 col-md-4'>
                         <h4 className='widget-title'>Top Sellers</h4>
                         {
