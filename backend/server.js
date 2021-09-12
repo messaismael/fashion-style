@@ -34,5 +34,5 @@ app.set('trust proxy', true);
  * @returns {void}
  */
 server.listen(port, function () {
-  console.log(`Numerica Ideas - microservice: running on localhost ${port}.`);
+  console.log(`Fashion style: running on localhost ${port}.`);
 });
