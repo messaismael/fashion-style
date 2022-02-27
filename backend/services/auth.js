@@ -19,7 +19,6 @@ exports.register = function(user){
       email: user.email.toLowerCase(),
       firstname: user.firstname,
       lastname: user.lastname,
-      gender: user.gender,
       password: user.password,
     });
 

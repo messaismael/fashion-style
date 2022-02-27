@@ -9,7 +9,7 @@ const Util = require("../services/util")
 exports.register = async (req, res) => {
   try{
     const createdUser = await AuthService.register(req.body);
-    console.log(`User created widh the id ${createdUser._id}.`);
+    console.log(`User created with the id ${createdUser._id}.`);
     res.status(status.OK).json({ success: true, data: createdUser });
   }catch (e){
     Util.error(e);

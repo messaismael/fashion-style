@@ -1,16 +1,23 @@
-import axios from 'axios'
+import axios from "axios";
+// import { sanitize } from "../utils/utils";
+import { SERVER_BASE_URL } from "./constants";
 import { AuthService } from '../services/auth/auth.sevice';
-import { SERVER_BASE_URL } from './constants';
 
-let instance = axios.create();
+// Axios instance
+var instance = axios.create();
 
 /**
- * Can be used to set request token
+ * Axios request interceptor, can be used to set request the logged in user token.
  * @param {import('axios').AxiosRequestConfig} config
+ * @author dassiorleando
  */
-function requestInterceptor (config: any){
+function requestInterceptor(config: any) {
+  // We set the bearer token (if exxisting) in all outgoing request to our API.
   const token = AuthService.getToken();
-  if(token) config.headers['Authorization']= `Bearer ${token}`;
+  if (token) config.headers['Authorization'] = `Bearer ${token}`;
+
+  // Any satinization on the data before performing the request
+  // if (config.data) config.data = sanitize(config.data);
 
   return config;
 }
@@ -19,7 +26,7 @@ function requestInterceptor (config: any){
  * Handle request error
  * @param {import('axios').AxiosError} error
  */
-function requestErrorInterceptor (error: any) {
+function requestErrorInterceptor(error: any) {
   return Promise.reject(error);
 }
 
@@ -27,8 +34,8 @@ function requestErrorInterceptor (error: any) {
  *
  * @param {import('axios').AxiosResponse} response
  */
-function responseSuscess(response:any){
-  return response
+function responseSuccess(response: any) {
+  return response;
 }
 
 /**
@@ -49,9 +56,6 @@ export const interceptorDefault = instance.interceptors.request.use(
   requestErrorInterceptor
 );
 
-instance.interceptors.response.use(
-  responseSuscess,
-  responseError
-);
+instance.interceptors.response.use(responseSuccess, responseError);
 
 export default instance;

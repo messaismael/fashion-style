@@ -23,10 +23,6 @@ var userSchema = new Schema({
   lastname: {
     type: String
   },
-  gender: {
-    type: String,
-    enum: [ 'MALE', 'FEMALE' ]
-  },
   password: {
     type: String,
     required: [true, 'The password is required.'],

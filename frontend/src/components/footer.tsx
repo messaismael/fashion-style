@@ -2,11 +2,11 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter, faInstagram, faYoutube, faGooglePlusG, faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faGooglePlusG, faFacebookF, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 import '../css/footer.scss'
 import { Button, Form, InputGroup } from 'react-bootstrap'
-import { faEnvelope, faLocationArrow, faMap, faMapMarker, faPhone, faPhoneAlt, faRss, faUserCircle } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faMapMarker, faPhoneAlt, faRss } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
     return (

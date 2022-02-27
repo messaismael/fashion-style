@@ -1,5 +1,5 @@
 import React, { useState }from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import { categoryList } from '../data';
