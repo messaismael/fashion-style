@@ -127,7 +127,7 @@ const stockData = [
     cover: "/images/s1img1.webp",
     name: "Fashion style",
     price: 10.95,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-2",
@@ -135,7 +135,7 @@ const stockData = [
     cover: "/images/s1img2.jpg",
     name: "Fashion style",
     price: 5.99,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-3",
@@ -143,7 +143,7 @@ const stockData = [
     cover: "/images/s1img3.jpg",
     name: "Fashion style",
     price: 23.99,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-4",
@@ -151,7 +151,7 @@ const stockData = [
     cover: "/images/s4img1.png",
     name: "Fashion style",
     price: 12.96,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-5",
@@ -159,7 +159,7 @@ const stockData = [
     cover: "/images/s4img2.gif",
     name: "Fashion style",
     price: 65.00,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-6",
@@ -167,7 +167,7 @@ const stockData = [
     cover: "/images/s4img3.jpg",
     name: "Fashion style",
     price: 25.99,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-7",
@@ -175,7 +175,7 @@ const stockData = [
     cover: "/images/s4img4.jpg",
     name: "Fashion style",
     price: 10,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-8",
@@ -183,7 +183,7 @@ const stockData = [
     cover: "/images/s4img1.png",
     name: "Fashion style",
     price: 49,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-9",
@@ -191,7 +191,7 @@ const stockData = [
     cover: "/images/s4img2.gif",
     name: "Fashion style",
     price: 17.99,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-10",
@@ -199,7 +199,7 @@ const stockData = [
     cover: "/images/s4img3.jpg",
     name: "Fashion style",
     price: 19.99,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-11",
@@ -207,14 +207,15 @@ const stockData = [
     cover: "/images/s4img4.jpg",
     name: "Fashion style",
     price: 55.99,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-12",
     category: "Suit men",
     cover: "/images/s4img1.png",
     name: "Fashion style",
-    price: 19
+    price: 19,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-13",
@@ -222,7 +223,7 @@ const stockData = [
     cover: "/images/s4img2.gif",
     name: "Fashion style",
     price: 55.96,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-14",
@@ -237,7 +238,7 @@ const stockData = [
     cover: "/images/s4img4.jpg",
     name: "Fashion style",
     price: 45.98,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-16",
@@ -245,7 +246,7 @@ const stockData = [
     cover: "/images/s4img1.png",
     name: "Fashion style",
     price: 28.96,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-17",
@@ -253,7 +254,7 @@ const stockData = [
     cover: "/images/s4img2.gif",
     name: "Fashion style",
     price: 80.99,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-18",
@@ -261,7 +262,7 @@ const stockData = [
     cover: "/images/s4img3.jpg",
     name: "Fashion style",
     price: 90.99,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
     id: "prod-19",
@@ -269,7 +270,7 @@ const stockData = [
     cover: "/images/s4img4.jpg",
     name: "Fashion style",
     price: 19.96,
-    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   }
 ]
 
