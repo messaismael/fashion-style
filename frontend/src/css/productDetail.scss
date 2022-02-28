@@ -1,0 +1,27 @@
+.prod-container{
+  border: 1px solid red; 
+  margin: 30px auto;
+  .image-container{
+    width: 100%;
+    height: 100%;
+    img{
+      background-position: center;
+      background-size: cover;
+      border: 1px solid green;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .prod-infos{
+    text-align: left;
+    padding-left: 10px;
+    .prod-status{
+      .badge{
+        color: green;
+      }
+      .child-2{
+        margin-left:20px;
+      }
+    }
+  }
+}

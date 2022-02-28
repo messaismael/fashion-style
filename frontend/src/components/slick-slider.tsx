@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { Product } from "../model/product.model";
 import ProductCard from './product-card'
 
 type Props = {
@@ -47,10 +48,10 @@ function SoftSlider({data}:Props) {
         <h2>Featured Products</h2>
         <Slider {...settings}>
             {
-                data.map((product:any, i:number) => {
+                data.map((prod:Product, i:number) => {
                     return (
                         <div key={i}>
-                            <ProductCard product={product} />
+                            <ProductCard product={prod}  />
                         </div>
                     )
                 })

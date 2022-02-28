@@ -4,14 +4,15 @@ import Category from '../components/category'
 import { categoryList } from "../data";
 import Login from "./login";
 import Register from "./register";
+import ProductDetail from "./productDetail";
 
 
 const RouteViews = () => {
     return (
         <Router>
             <Switch>
-                <Route path='/home'>
-                    <Home />
+                <Route path='/product/:id'>
+                    <ProductDetail />
                 </Route>
                 {
                     categoryList.map((categ, i) =>(
@@ -26,7 +27,9 @@ const RouteViews = () => {
                 <Route path='/register' >
                     <Register />
                 </Route>
-                <Redirect to='/home'/>
+                <Route path='/'>
+                    <Home />
+                </Route>
             </Switch>
         </Router>
     )

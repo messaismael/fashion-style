@@ -122,137 +122,154 @@ const heroData = [
 
 const stockData = [
   {
-    id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-1",
     category: "Shoes",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/21ed2dec-16a4-4a61-b916-1b590a9ab32f-683x1024.jpg",
+    cover: "/images/s1img1.webp",
     name: "Fashion style",
-    price: 10.95
+    price: 10.95,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-2",
     category: "Dresses",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/09/robe-6-683x1024.jpg",
+    cover: "/images/s1img2.jpg",
     name: "Fashion style",
-    price: 5.99
+    price: 5.99,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "0u96q42u-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-3",
     category: "Suit men",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2019/07/Costume-Homme-un-bouton-couleur-noir.jpg",
+    cover: "/images/s1img3.jpg",
     name: "Fashion style",
-    price: 23.99
+    price: 23.99,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "2rb37qw5-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-4",
     category: "Shoes",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/SLIPPER-Homme-en-cuir-marron-deux-pompons.png",
+    cover: "/images/s4img1.png",
     name: "Fashion style",
-    price: 12.96
+    price: 12.96,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "3k9zka2c-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-5",
     category: "Dresses",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/06/robe4.jpg",
+    cover: "/images/s4img2.gif",
     name: "Fashion style",
-    price: 65.00
+    price: 65.00,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "3sbvndpe-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-6",
     category: "Suit men",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/11/Veste-chic-pour-Homme-en-bleu-avec-des-rayures.jpg",
+    cover: "/images/s4img3.jpg",
     name: "Fashion style",
-    price: 25.99
+    price: 25.99,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "5oekg7gl-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-7",
     category: "Shoes",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/Tennis-homme-en-bleu-blanc-rouge.png",
+    cover: "/images/s4img4.jpg",
     name: "Fashion style",
-    price: 10
+    price: 10,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "623gsnj1-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-8",
     category: "Dresses",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/Robe-femme-evasee-black-and-white.png",
+    cover: "/images/s4img1.png",
     name: "Fashion style",
-    price: 49
+    price: 49,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "8u6lpj3e-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-9",
     category: "Suit men",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/11/Veste-chic-pour-Homme-en-bleu-cintree.jpg",
+    cover: "/images/s4img2.gif",
     name: "Fashion style",
-    price: 17.99
+    price: 17.99,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "917h7iji-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-10",
     category: "Shoes",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/Chaussure-homme-chic-en-deux-tons.png",
+    cover: "/images/s4img3.jpg",
     name: "Fashion style",
-    price: 19.99
+    price: 19.99,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "9vp96t5a-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-11",
     category: "Dresses",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/10/Untitled-17-683x1024.jpg",
+    cover: "/images/s4img4.jpg",
     name: "Fashion style",
-    price: 55.99
+    price: 55.99,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "bsx7u3xv-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-12",
     category: "Suit men",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/11/Costume-chic-pour-Homme-en-violet.jpg",
+    cover: "/images/s4img1.png",
     name: "Fashion style",
     price: 19
   },
   {
-    id: "o3ahe30e-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-13",
     category: "Shoes",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/Chaussure-deux-pompons-homme-de-luxe.png",
+    cover: "/images/s4img2.gif",
     name: "Fashion style",
-    price: 55.96
+    price: 55.96,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "q8qfaonc-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-14",
     category: "Dresses",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/09/Untitled-3-683x1024.jpg",
+    cover: "/images/s4img3.jpg",
     name: "Fashion style",
     price: 80.99
   },
   {
-    id: "tj8mc0yd-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-15",
     category: "Suit men",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/11/Costume-Homme-deux-boutons-couleur-grise.jpg",
+    cover: "/images/s4img4.jpg",
     name: "Fashion style",
-    price: 45.98
+    price: 45.98,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "wh9yiu5w-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-16",
     category: "Shoes",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/Chaussure-homme-en-noir-deux-tons.png",
+    cover: "/images/s4img1.png",
     name: "Fashion style",
-    price: 28.96
+    price: 28.96,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "xfpwqd2u-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-17",
     category: "Dresses",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2018/10/Untitled-19-683x1024.jpg",
+    cover: "/images/s4img2.gif",
     name: "Fashion style",
-    price: 80.99
+    price: 80.99,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "zceo3fdn-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-18",
     category: "Suit men",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2020/11/Costume-Homme-Carrele-3-pieces-noir.jpg",
+    cover: "/images/s4img3.jpg",
     name: "Fashion style",
-    price: 90.99
+    price: 90.99,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   },
   {
-    id: "o3ahe30e-d98b-11e8-9y8b-f2801f1b9fd1",
+    id: "prod-19",
     category: "Shoes",
-    cover: "https://www.ledetaillant.biz/wp-content/uploads/2021/01/Paire-monsieur-en-cuir-deux-tons-trois-boucles.png",
+    cover: "/images/s4img4.jpg",
     name: "Fashion style",
-    price: 19.96
+    price: 19.96,
+    descriptoin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
   }
 ]
 
@@ -307,4 +324,5 @@ export {
   brandList,
   productByCateg,
   categoryList,
+  stockData
 }
