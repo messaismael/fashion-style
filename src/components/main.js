@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-  } from "react-router-dom";
+} from "react-router-dom";
 import '../css/main.css'
 import Home from './home'
 import NavCategory from './nav-category'
@@ -16,14 +16,14 @@ class Main extends React.Component {
             <div className="main">
                 <Router>
                     <Switch>
-                        <Route exact path='/e-commerce-template/'>
+                        <Route exact path='/fashion-style-web-app/'>
                             <Home />
                         </Route>
                         {
                             arrCategory.map((categ, i) => {
                                 return (
-                                    <Route path={"/e-commerce-template/"+ categ } key={i} >
-                                        <Category category={ categ } />
+                                    <Route path={"/fashion-style-web-app/" + categ} key={i} >
+                                        <Category category={categ} />
                                     </Route>
                                 )
                             })
