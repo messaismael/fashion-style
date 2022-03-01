@@ -1,0 +1,33 @@
+.app{
+  text-align: center;
+  overflow: hidden;  
+  div.container-fluid {
+    padding: 0 !important;
+  }
+}
+/* global class */
+
+.img-cover {
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rounded {
+  border-radius: 7px !important;
+}
+.rounded-btn{
+  border-radius: 20px !important;
+    padding: 10px 15px;
+}
+
+.logo {
+  margin: 0 auto;
+  object-fit: cover;
+}
+/* global class */

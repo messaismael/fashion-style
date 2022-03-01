@@ -1,23 +1,50 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+*/node_modules
+*/.pnp
+*/.pnp.js
+*/electron/dist
+*/electron/installers
+*/electron/node_modules
 
 # testing
-/coverage
+*/coverage
 
 # production
-/build
+*/dist
+*/www
+*/installers
+*/tmp
+*/out-tsc
+*/build
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*/.DS_Store
+*/.env.local
+*/.env
+*/.env.development.local
+*/.env.test.local
+*/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*/npm-debug.log*
+*/yarn-debug.log*
+*/yarn-error.log*
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# System Files
+*/.DS_Store
+*/Thumbs.db
+
+# custom
+*/dev.json
+*/prod.json
+*/docs
+*/code.zip
+node_modules
