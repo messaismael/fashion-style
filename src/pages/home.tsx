@@ -105,6 +105,7 @@ const Home:React.FC = () => {
                 </Container>
 
                 <Container className='section4 mb-5'>
+                    <h2>Featured Products</h2>
                     <SoftSLider data={homeData['section4']} />
                 </Container>
                 <div className='container mx-auto row section5'>

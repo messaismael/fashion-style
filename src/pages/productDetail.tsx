@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
 import { useParams, useHistory } from "react-router-dom";
 import { Product } from '../model/product.model';
+import SoftSLider from '../components/slick-slider'
+
 
 import '../css/productDetail.scss'
 import { stockData } from '../data'
@@ -30,7 +32,7 @@ const ProductDetail:React.FC = () => {
   }, []);
 
   const handleNumCart = (num: number) => {
-    if(num != 0){
+    if(num !== 0){
       setNumCart(num);
     }
   }
@@ -72,6 +74,13 @@ const ProductDetail:React.FC = () => {
               </Row>
             </Col>
           </Row>
+          <div>
+            <h4>Related Products</h4>
+            <p style={{"margin":"auto", "width":"60%" }}>You can stop autoplay, increase/decrease, animation speen and number of grid to show and product form store admin</p>
+            <div>
+              <SoftSLider data={stockData}/>
+            </div>
+          </div>
         </Container>
       }
       <Footer/>

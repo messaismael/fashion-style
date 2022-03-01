@@ -45,18 +45,17 @@ function SoftSlider({data}:Props) {
 
   return (
     <div>
-        <h2>Featured Products</h2>
-        <Slider {...settings}>
-            {
-                data.map((prod:Product, i:number) => {
-                    return (
-                        <div key={i}>
-                            <ProductCard product={prod}  />
-                        </div>
-                    )
-                })
-            }
-        </Slider>
+      <Slider {...settings}>
+        {
+          data.map((prod:Product, i:number) => {
+            return (
+              <div key={i}>
+                <ProductCard product={prod}  />
+              </div>
+            )
+          })
+        }
+      </Slider>
     </div>
   );
 }

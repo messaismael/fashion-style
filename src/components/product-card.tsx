@@ -6,7 +6,7 @@ import { Product } from '../model/product.model';
 const ProductCard: React.FC<{product: Product}> = ({product}) => {
   
   return(
-    <Link to={`/product/${product.id}`}>
+    <Link to={`/product/${product.id}`} style={{ "textDecoration" : "none"}}>
       <div className='item rounded'>
         <div className='product-card-thumb'>
             <img src={product.cover} alt={product.name} />

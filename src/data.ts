@@ -95,28 +95,7 @@ const heroData = [
     cover: "/images/heroImg3.jpg",
     name: "Cool african american man in black hat on dark background",
     price: 23.99
-  },
-  {
-    id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Shoes",
-    cover: "/images/heroImg4.jpg",
-    name: "Blue shoes on a guy",
-    price: 10.95
-  },
-  {
-    id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Shoes",
-    cover: "/images/heroImg5.jpg",
-    name: "Blue shoes on a guy",
-    price: 10.95
-  },
-  {
-    id: "0u96q42u-d93b-11e8-9f8b-f2801f1b9fd1",
-    category: "Suit men",
-    cover: "/images/heroImg6.jpg",
-    name: "Cool african american man in black hat on dark background",
-    price: 23.99
-  },
+  }
 ]
 
 
