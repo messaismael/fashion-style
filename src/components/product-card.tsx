@@ -1,6 +1,5 @@
 import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-import '../css/product-card.scss'
 import { Product } from '../model/product.model';
 
 const ProductCard: React.FC<{product: Product}> = ({product}) => {

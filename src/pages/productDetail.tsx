@@ -5,7 +5,6 @@ import { Product } from '../model/product.model';
 import SoftSLider from '../components/slick-slider'
 
 
-import '../css/productDetail.scss'
 import { stockData } from '../data'
 
 import Footer from '../components/footer';

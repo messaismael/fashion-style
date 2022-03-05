@@ -5,7 +5,6 @@ import HeroCarousel from '../components/hero-carousel';
 import BrandSlider from '../components/brand-slider'
 import NavCategory from '../components/nav-category'
 
-import '../css/home.scss'
 import Footer from '../components/footer';
 import NavBar from '../components/navbar';
 

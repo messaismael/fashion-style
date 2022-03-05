@@ -4,7 +4,6 @@ import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGooglePlusG, faFacebookF, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
-import '../css/footer.scss'
 import { Button, Form, InputGroup } from 'react-bootstrap'
 import { faEnvelope, faMapMarker, faPhoneAlt, faRss } from '@fortawesome/free-solid-svg-icons'
 

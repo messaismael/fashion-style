@@ -2,7 +2,6 @@
 import { Row, Col, Container, Form, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Logo from '../components/logo'
-import '../css/login.scss'
 
 
 const Login:React.FC = () => {

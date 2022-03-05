@@ -1,4 +1,3 @@
-import '../css/category.scss'
 import { Button, Col } from 'react-bootstrap';
 import { productByCateg } from '../data';
 import NavBar from './navbar';

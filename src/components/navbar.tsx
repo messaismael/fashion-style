@@ -5,7 +5,6 @@ import { faShoppingCart, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import { categoryList } from '../data';
 import Logo from './logo';
 
-import '../css/nav-bar.scss'
 
 
 const  NavBar:React.FC = ()  => {
