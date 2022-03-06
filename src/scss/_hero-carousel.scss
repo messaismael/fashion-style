@@ -1,10 +1,12 @@
 /* center vetically and crop image */
+@import './libs/function.scss';
+
 .carousel-item {
     position: relative;
     overflow: hidden;
-    min-height: calc(100vw / 2.7);
+    min-height: RatioHeight(2.7);
     @media (max-width: 992px) {
-        min-height: calc(100vw / 1.5);
+        min-height: RatioHeight(1.5);
     }
 }
 .carousel-item img {
@@ -14,8 +16,17 @@
 }
 
 /* convert carousel indicators to dots */
-.carousel-indicators li {
-    border-radius: 50% !important;
-    width: 15px !important;
-    height: 15px !important;
+.carousel-indicators{
+    li {
+        border-radius: 50% !important;
+        width: 15px !important;
+        height: 15px !important;
+    }
+    @media (max-width: 576px) {
+        margin-bottom: 0.1rem;
+        li {
+            width: 8px !important;
+            height: 8px !important;
+        }
+    }
 }
