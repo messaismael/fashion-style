@@ -2,7 +2,10 @@
 .carousel-item {
     position: relative;
     overflow: hidden;
-    height: 600px;
+    min-height: calc(100vw / 2.7);
+    @media (max-width: 992px) {
+        min-height: calc(100vw / 1.5);
+    }
 }
 .carousel-item img {
     position:absolute;

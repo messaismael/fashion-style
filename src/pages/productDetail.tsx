@@ -17,12 +17,12 @@ interface RouteParams {
 const ProductDetail:React.FC = () => {
   const [prod, setProd] = useState<Product>(new Product);
   const [numCart, setNumCart] = useState(1);
-  
   const params = useParams<RouteParams>();
   const route = useHistory();
 
 
   useEffect(() => {
+    window.scrollTo(0, 0)
 
     getProdById(params.id);
     /* if(!prod.id){
@@ -64,7 +64,7 @@ const ProductDetail:React.FC = () => {
               <Row className="mt-4 vendor">
                 <Col  lg={3} md={3}  className='cart-num-cont mt-2'>
                   <Button onClick={() => handleNumCart(numCart-1)} variant="secondary" className='cart-num'>-</Button>
-                  <input className='cart-num' value={numCart} />
+                  <input className='cart-num' onChange={()=>{}} value={numCart} />
                   <Button onClick={() => handleNumCart(numCart+1)} variant="secondary" className='cart-num'>+</Button>
                 </Col>
                 <Col lg={9} md={9} className='mt-2 pl-0'>
