@@ -1,4 +1,5 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Link, Router, useHistory } from 'react-router-dom';
 import { homeData } from '../data'
 import SoftSLider from '../components/slick-slider'
 import HeroCarousel from '../components/hero-carousel';
@@ -9,6 +10,16 @@ import Footer from '../components/footer';
 import NavBar from '../components/navbar';
 
 const Home:React.FC = () => {
+
+    let router = useHistory();
+
+
+    const goToLink = (path: string) => {
+
+        router.push("/"+path);
+    }
+
+
     return (
         <>
             <NavBar />
@@ -19,18 +30,18 @@ const Home:React.FC = () => {
                 </Container>
 
                 <Container>
-                    <Row>
+                    <Row className='mt-4 mb-4   '>
                     {
                         homeData['section1'].map((item, i) => {
                             return (
                                 <Col key={i} sm={4}>
-                                    <div className='home-block'>
+                                    <div className='home-block mt-3'>
                                         <div className='block-text'>
                                             <p>{item.category}</p>
                                             <p style={{ width: '70%' }}> {item.name}</p>
                                             <p> ${item.price}</p>
                                         </div>
-                                        <Button variant='dark'> Get it</Button>
+                                        <Button onClick={()=>goToLink("product/"+item.id)} variant='dark'> Get it</Button>
                                         <div className='img-presentation' >
                                             <img src={item.cover} alt={item.category + i} width='100%' />
                                         </div>
@@ -42,13 +53,13 @@ const Home:React.FC = () => {
                     </Row>
                 </Container>
                 <Container>
-                    <div className='all-categories mb-5'>
+                    <div className='all-categories mb-4'>
                         <Button href={'/shop-categories'} variant='outline-secondary'>
                             All Categories
                         </Button>
                     </div>
                     <Row className='section2'>
-                        <Col md={6}>
+                        <Col md={6} className='mt-2'>
                             <div className="rounded bg-light pb-5 position-relative">
                                 <span className='product-badge'>LIMITED OFFER</span>
                                 <h3 className="pt-5"> New </h3>
@@ -76,8 +87,8 @@ const Home:React.FC = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={6}>
-                            <div className='img-container mb-2' style={{ minHeight: "270px" }}>
+                        <Col md={6} className='mt-2'>
+                            <div className='img-container position-relative' style={{ minHeight: "280px", height:"100%" }}>
                                 <div className='img-cover rounded' style={{ "backgroundImage": `url(${homeData.section2.cover})` }}></div>
                             </div>
                         </Col>
@@ -113,15 +124,18 @@ const Home:React.FC = () => {
                         {
                             homeData['section4'].filter((item, i)=>( i < 3)).map((item, index) => {
                                 return (
-                                    <div className='entry' key={index} >
-                                        <div className="entry-thumb">
-                                            <img src={item.cover} width='62' alt='entry thumb' />
+                                    <Link to={`/product/${item.id}`}>
+                                        <div className='entry' key={index} >
+                                            <div className="entry-thumb">
+                                                <img src={item.cover} width='62' alt='entry thumb' />
+                                            </div>
+                                            <div className="entry-content">
+                                                <h6 className='entry-title'>{item.name}</h6>
+                                                <div className='entry-price'>${item.price}</div>
+                                            </div>
                                         </div>
-                                        <div className="entry-content">
-                                            <h6 className='entry-title'>{item.name}</h6>
-                                            <div className='entry-price'>${item.price}</div>
-                                        </div>
-                                    </div>
+                                    </Link>
+
                                 );
                             })
                         }
@@ -132,15 +146,17 @@ const Home:React.FC = () => {
                             homeData['section4'].filter((item, i)=>( i < 3)).map((item, index) => {
                             
                                 return (
-                                    <div className='entry' key={index} >
-                                        <div className="entry-thumb">
-                                            <img src={item.cover} width='62' alt='entry thumb' />
+                                    <Link to={`/product/${item.id}`}>
+                                        <div className='entry' key={index} >
+                                            <div className="entry-thumb">
+                                                <img src={item.cover} width='62' alt='entry thumb' />
+                                            </div>
+                                            <div className="entry-content">
+                                                <h6 className='entry-title'>{item.name}</h6>
+                                                <div className='entry-price'>${item.price}</div>
+                                            </div>
                                         </div>
-                                        <div className="entry-content">
-                                            <h6 className='entry-title'>{item.name}</h6>
-                                            <div className='entry-price'>${item.price}</div>
-                                        </div>
-                                    </div>
+                                    </Link>
                                 );
                             })
                         }
@@ -151,15 +167,17 @@ const Home:React.FC = () => {
                             homeData['section4'].filter((item, i)=>( i < 3)).map((item, index) => {
                             
                                 return (
-                                    <div className='entry' key={index} >
-                                        <div className="entry-thumb">
-                                            <img src={item.cover} width='62' alt='entry thumb' />
+                                    <Link to={`/product/${item.id}`}>
+                                        <div className='entry' key={index} >
+                                            <div className="entry-thumb">
+                                                <img src={item.cover} width='62' alt='entry thumb' />
+                                            </div>
+                                            <div className="entry-content">
+                                                <h6 className='entry-title'>{item.name}</h6>
+                                                <div className='entry-price'>${item.price}</div>
+                                            </div>
                                         </div>
-                                        <div className="entry-content">
-                                            <h6 className='entry-title'>{item.name}</h6>
-                                            <div className='entry-price'>${item.price}</div>
-                                        </div>
-                                    </div>
+                                    </Link>
                                 );
                             })
                         }

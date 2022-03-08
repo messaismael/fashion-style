@@ -6,16 +6,17 @@ const ProductCard: React.FC<{product: Product}> = ({product}) => {
   
   return(
     <Link to={`/product/${product.id}`} style={{ "textDecoration" : "none"}}>
-      <div className='item rounded'>
-        <div className='product-card-thumb'>
-            <img src={product.cover} alt={product.name} />
-        </div>
-        <div className='caption'>
-          <div className='d-flex justify-content-between item-info'>
-            <div className='item-name'>{product.name}</div>
-            <div className='item-price'>${product.price}</div>
+      <div className='item'>
+        <div className="rounded">
+          <div className='product-card-thumb' style={{'backgroundImage':`url(${product.cover})`}}>
           </div>
-          <Button className='rounded-btn' variant='outline-dark' type="button">Add to cart</Button>
+          <div className='caption'>
+            <div className='d-flex justify-content-between item-info'>
+              <div className='item-name'>{product.name}</div>
+              <div className='item-price'>${product.price}</div>
+            </div>
+            <Button className='rounded-btn mb-2' variant='outline-dark' type="button">Add to cart</Button>
+          </div>
         </div>
       </div>
     </Link>

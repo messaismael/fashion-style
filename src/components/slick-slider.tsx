@@ -9,20 +9,26 @@ type Props = {
 
 function SoftSlider({data}:Props) {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     arrows: false,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1170,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          slidesToScroll: 4,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
         }
       },
       {
@@ -30,7 +36,6 @@ function SoftSlider({data}:Props) {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2
         }
       },
       {

@@ -2,29 +2,29 @@
 const homeData = {
   section1: [
     {
-      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      id: "prod-1",
       category: "Shoes",
       cover: "/images/s1img1.webp",
       name: "Aire NIke",
       price: 10.95
     },
     {
-      id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
+      id: "prod-2",
       category: "Suit men",
       cover: "/images/s1img2.jpg",
       name: "Six button men's suit",
       price: 50.99
     },
     {
-      id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
+      id: "prod-3",
       category: "Dresses",
       cover: "/images/s1img3.jpg",
-      name: "Sexy blue puff sleeve mini dress",
+      name: "Sleeve mini dress",
       price: 25.99
     },
   ],
   section2: {
-    id: "0o6r76vt-d93b-11e8-9f8b-f2801f1b9fd1",
+    id: "prod-1",
     category: "Shoes",
     cover: "/images/s2img1.webp",
     name: "Nike Free",
@@ -36,35 +36,35 @@ const homeData = {
   },
   section4: [
     {
-      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      id: "prod-2",
       category: "Bags",
       cover: "/images/s4img1.png",
       name: "Blue shoes on a guy",
       price: 10.95
     },
     {
-      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      id: "prod-3",
       category: "Bags",
       cover: "/images/s4img1.png",
       name: "Blue shoes on a guy",
       price: 10.95
     },
     {
-      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      id: "prod-4",
       category: "Bags",
       cover: "/images/s4img2.gif",
       name: "Blue shoes on a guy",
       price: 10.95
     },
     {
-      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      id: "prod-5",
       category: "Bags",
       cover: "/images/s4img3.jpg",
       name: "Blue shoes on a guy",
       price: 10.95
     },
     {
-      id: "0ld0qvru-d93b-11e8-9f8b-f2801f1b9fd1",
+      id: "prod-6",
       category: "Bags",
       cover: "/images/s4img4.jpg",
       name: "Blue shoes on a guy",

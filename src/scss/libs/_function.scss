@@ -3,6 +3,11 @@
   @return 100vw/ $ratio;
 }
 
+<<<<<<< HEAD
 @function RatioWidth($ratio){
   @return 100vh/ $ratio;
+=======
+@function Ratio($ratio, $value){
+  @return $value/ $ratio;
+>>>>>>> 327681d (imrpove the slider responsive and add links)
 }
