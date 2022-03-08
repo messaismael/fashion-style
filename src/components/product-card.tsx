@@ -1,11 +1,22 @@
+import { useEffect } from 'react';
 import { Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Product } from '../model/product.model';
 
 const ProductCard: React.FC<{product: Product}> = ({product}) => {
-  
+  const router = useHistory();
+
+    useEffect(() => {
+    }, [])
+    
+
+  const goToDetail = () => {
+    router.push(`/product/${product.id}`);
+    window.location.reload();
+  }
+
   return(
-    <Link to={`/product/${product.id}`} style={{ "textDecoration" : "none"}}>
+    <div onClick={goToDetail} style={{ "textDecoration" : "none"}}>
       <div className='item'>
         <div className="rounded">
           <div className='product-card-thumb' style={{'backgroundImage':`url(${product.cover})`}}>
@@ -19,7 +30,7 @@ const ProductCard: React.FC<{product: Product}> = ({product}) => {
           </div>
         </div>
       </div>
-    </Link>
+    </div>
   );
 } 
 

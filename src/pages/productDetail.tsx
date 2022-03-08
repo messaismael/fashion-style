@@ -28,7 +28,7 @@ const ProductDetail:React.FC = () => {
     /* if(!prod.id){
       route.push("/");
     } */
-  }, []);
+  }, [params]);
 
   const handleNumCart = (num: number) => {
     if(num !== 0){
