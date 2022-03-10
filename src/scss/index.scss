@@ -1,3 +1,14 @@
+@import './app';
+@import './nav-bar';
+@import './footer';
+@import './hero-carousel';
+@import './product-card';
+@import './home';
+@import './category';
+@import './login';
+@import './register';
+@import './productDetail';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +21,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  max-width: 1500px !important;
 }

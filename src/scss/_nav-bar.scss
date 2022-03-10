@@ -1,0 +1,54 @@
+#menu-bar {
+  .navbar{
+    padding: 0.1rem 1rem;
+    min-height: 72px;
+  }
+  .nav-logo{
+    border: 0px solid red;
+    position:relative;
+    min-width: 60px;
+    margin-right: 150px;
+    width: 60px;
+    .logo-label{
+      position: absolute;
+      left: 105%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+    .nav-collapse{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        .btn{ border-radius: 50px; }
+        .nav-form{
+            position: absolute;
+            left: 50px;
+            .search-form{
+                border-radius: 20px;
+                width: 100%;
+            }
+        }
+        .nav-link{
+            margin-right: 0.1rem !important;
+        }
+        @media (max-width: 768px) {
+            flex-direction: column;
+            
+            .btn{ display: none !important;}
+            
+            .nav-form{
+                position: static;
+                order: 2;
+                width: 100%;
+                margin: 15px 0;
+            }
+            .nav-item{
+                order: 1;
+                width: 100%;
+            }
+        }
+    }
+}

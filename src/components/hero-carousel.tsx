@@ -1,7 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel'
 import { heroData } from '../data'
 
-import '../css/hero-carousel.scss'
 
 const HeroCarousel:React.FC = () => {
     return (

@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { Row, Col, Container, Form, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Logo from '../components/logo'
-import '../css/register.scss'
 import { User } from '../model/user.model'
 import { RegisterService } from '../services/register'
 

@@ -1,0 +1,8 @@
+
+@function RatioHeight($ratio){
+  @return 100vw/ $ratio;
+}
+
+@function Ratio($ratio, $value){
+  @return $value/ $ratio;
+}

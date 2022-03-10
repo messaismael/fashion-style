@@ -17,8 +17,9 @@
 */installers
 */tmp
 */out-tsc
-*/build
-build
+*/build*
+build/*
+
 
 # misc
 */.DS_Store
