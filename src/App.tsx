@@ -7,6 +7,7 @@ import Login from './pages/login';
 import Register from './pages/register';
 
 import { categoryList } from './data';
+import CartPage from './pages/Cart';
 
 function App() {
 
@@ -25,6 +26,9 @@ function App() {
 								</Route>
 							))
 						}
+						<Route path='/cart' >
+							<CartPage />
+						</Route>
 						<Route path='/login' >
 							<Login />
 						</Route>

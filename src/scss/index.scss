@@ -8,6 +8,8 @@
 @import './login';
 @import './register';
 @import './productDetail';
+@import './cart-card.scss';
+@import './cart.scss';
 
 body {
   margin: 0;
@@ -23,6 +25,8 @@ code {
     monospace;
 }
 
-.container{
-  max-width: 1500px !important;
+@media (min-width: 1200px){
+  .container{
+    max-width: 1500px !important;
+  }
 }

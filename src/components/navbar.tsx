@@ -60,7 +60,7 @@ const  NavBar:React.FC = ()  => {
                             </NavDropdown>
                             { !isLoggedIn && <Nav.Link eventKey={2} href="/login">Login</Nav.Link> }
                             { isLoggedIn && <Nav.Link href="#profile"> <FontAwesomeIcon  icon={faUserCircle} size="lg"/></Nav.Link> }
-                            <Nav.Link href="#Shopping"><FontAwesomeIcon  className="mr-1" icon={faShoppingCart} size="sm" /> cart[0] </Nav.Link>
+                            <Nav.Link href="/cart" ><FontAwesomeIcon  className="mr-1" icon={faShoppingCart} size="sm" /> cart[0] </Nav.Link>
                         </Nav>
 
                         </div>
