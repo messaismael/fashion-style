@@ -1,3 +1,4 @@
+@import './global.scss';
 @import './app';
 @import './nav-bar';
 @import './footer';
@@ -8,8 +9,9 @@
 @import './login';
 @import './register';
 @import './productDetail';
-@import './cart-card.scss';
+@import './cart-item.scss';
 @import './cart.scss';
+@import './checkout-summay.scss';
 
 body {
   margin: 0;
@@ -25,8 +27,12 @@ code {
     monospace;
 }
 
-@media (min-width: 1200px){
-  .container{
+.container {
+  @media (min-width: 1200px){
     max-width: 1500px !important;
   }
+  /* @media (min-width: 768px)
+  {
+    max-width: 95% !important;
+  } */
 }

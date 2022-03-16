@@ -1,25 +1,26 @@
 
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import CartCard from './cartCard';
+import CartItem from './cart-item';
+import CheckoutSummary from './checkoutSummary';
 
 const CartComponent: React.FC = () => {
   return (
-    <Container className='mt-3' >
+    <Container fluid="sm" className='mt-3' >
       <div className='p-5'>
         <h2 className='text-left'>My Cart</h2>
         <p className='text-left'>Review and edit your order, and then proceed  to Checkout</p>
       </div>
       <Row className='mb-5' style={{ margin: 'auto' }}>
         <Col md={8}>
-          <CartCard />
-          <CartCard />
-          <CartCard />
-          <CartCard />
-          <CartCard />
+          <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
         </Col>
         <Col md={4}>
-          <CartCard />
+          <CheckoutSummary />
         </Col>
       </Row>
 

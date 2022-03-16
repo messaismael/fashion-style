@@ -1,0 +1,21 @@
+.checkout-summary{
+  max-width: 350px;
+  min-width: 230px;
+  margin: auto;
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #9a9da099;
+  border-radius: 5px;
+  button{
+    width: 100%;
+  }
+  p{
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.83);
+    span{
+      color: green;
+      font-weight: bold;
+    }
+  }
+}
