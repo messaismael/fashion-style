@@ -12,7 +12,7 @@ const ProductCard: React.FC<{product: Product}> = ({product}) => {
 
   const goToDetail = () => {
     router.push(`/product/${product.id}`);
-    router.go(0)
+    //router.go(0)
   }
 
   return(
