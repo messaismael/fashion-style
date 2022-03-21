@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap'
 import { useDispatch } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
@@ -6,6 +6,7 @@ import { Product } from '../model/product.model';
 import { addProduct } from '../redux/actions';
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
+  const [isInCart, setIsInCart] = useState(false);
   const router = useHistory();
   const productsCart = [];
   const dispatch = useDispatch();
@@ -15,9 +16,9 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   }, [])
 
 
-  const goToDetail = () => {
-    router.push(`/product/${product.id}`);
-    //router.go(0)
+  const addToCart = () => {
+    setIsInCart(!isInCart);
+    dispatch(addProduct(product.id));
   }
 
   return (
@@ -34,7 +35,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
           </div>
         </Link>
       </div>
-      <Button onClick={() => dispatch(addProduct(product.id))} className='btn-add-cart rounded-btn mb-2' variant='outline-dark' type="button">Add to cart</Button>
+      <Button onClick={addToCart} className='btn-add-cart rounded-btn mb-2' variant='outline-dark' type="button" disabled={isInCart}>{isInCart ? 'In Cart':'Add to cart'}</Button>
     </div>
   );
 }
