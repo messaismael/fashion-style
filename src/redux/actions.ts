@@ -1,0 +1,1 @@
+export { addProduct, removeProduct } from "./slices/productsCart";

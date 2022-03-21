@@ -5,12 +5,16 @@ import { faSearch, faShoppingCart, faUserCircle } from '@fortawesome/free-solid-
 import { categoryList } from '../data';
 import Logo from './logo';
 import useWindowDimensions from '../utils/useWindowDimensions';
+import { useSelector } from 'react-redux';
+import { RootState } from '../redux/reducer';
 
 
 
 const  NavBar:React.FC = ()  => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [showSearchBar, setShowSearchBar] = useState(false);
+
+    const productsCart = useSelector((state:RootState)=> state.productCart.products);
 
     const { height, width } = useWindowDimensions();
 
@@ -24,7 +28,7 @@ const  NavBar:React.FC = ()  => {
 
     return (
         <div id="menu-bar">
-            <Navbar collapseOnSelect expand="md" bg="dark"  variant="dark">
+            <Navbar fixed="top" collapseOnSelect expand="md" bg="dark"  variant="dark">
                 <Container>
                     <Navbar.Brand className="nav-logo" href="/home">
                         <Logo/>
@@ -60,7 +64,7 @@ const  NavBar:React.FC = ()  => {
                             </NavDropdown>
                             { !isLoggedIn && <Nav.Link eventKey={2} href="/login">Login</Nav.Link> }
                             { isLoggedIn && <Nav.Link href="#profile"> <FontAwesomeIcon  icon={faUserCircle} size="lg"/></Nav.Link> }
-                            <Nav.Link href="/cart" ><FontAwesomeIcon  className="mr-1" icon={faShoppingCart} size="sm" /> cart[0] </Nav.Link>
+                            <Nav.Link href="/cart" ><FontAwesomeIcon  className="mr-1" icon={faShoppingCart} size="sm" /> cart[{productsCart.length}] </Nav.Link>
                         </Nav>
 
                         </div>

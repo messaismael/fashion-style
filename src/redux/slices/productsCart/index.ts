@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 
 interface IProducstCart {
-  products: Product[];
+  products: string[];
 };
 
 const initialState: IProducstCart = {
@@ -15,16 +15,18 @@ const productsCartSlice = createSlice({
   initialState,
   reducers: {
     addProduct: {
-      reducer: (state, action: PayloadAction<Product>) => {
-        state.products.push(action.payload);
+      reducer: (state, action: PayloadAction<string>) => {
+        if (!state.products.includes(action.payload)) {
+          state.products.push(action.payload);
+        }
       },
-      prepare: (prod: Product) => {
+      prepare: (prod: string) => {
         return { payload: prod }
       }
     },
     removeProduct: {
       reducer: (state, action: PayloadAction<string>) => {
-        // stuffs
+        state.products.splice(state.products.indexOf(action.payload), 1);
       },
       prepare: (prodId: string) => {
         return { payload: prodId };
