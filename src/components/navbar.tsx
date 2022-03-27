@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
     })
 
     return (
-        <div id="menu-bar" style={{ "marginBottom": 80 }}>
+        <div id="menu-bar" style={{ "marginBottom": 73 }}>
             <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand className="nav-logo" href="/home">

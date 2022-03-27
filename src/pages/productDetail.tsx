@@ -46,7 +46,7 @@ const ProductDetail:React.FC = () => {
     <>
       <NavBar/>
       { prod?.id &&
-        <div className="prod-container"> 
+        <div className="prod-container" style={{"marginTop":80}}> 
           <Row  style={{minHeight: "70vh"}} className="mb-5">
             <Col md={5} className='mb-4'>
               <div className='image-container'> <Image src={prod?.cover} /></div>
