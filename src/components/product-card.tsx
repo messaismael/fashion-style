@@ -14,6 +14,9 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 
 
   useEffect(() => {
+    if(CartService.isInCart(product)){
+      setIsInCart(true);
+    }
   }, [])
 
 

@@ -10,11 +10,18 @@ export class CartService {
     return JSON.parse(LocalStorageService.get(this.cartName) || '[]');
   }
 
+  public static isInCart(product: Product): boolean {
+    const items = this.getItems();
+    const index = items.findIndex(r => r.id === product.id);
+    
+    return index ===-1? false:true;
+  }
+
   static addItem(product: Product): { success: boolean } {
     const items = this.getItems();
     const index = items.findIndex(r => r.id === product.id);
 
-    if (index == -1) {
+    if (index === -1) {
       items.push(product);
 
       LocalStorageService.set(this.cartName, JSON.stringify(items));

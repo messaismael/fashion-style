@@ -38,7 +38,7 @@ const homeData = {
     {
       id: "prod-2",
       category: "Bags",
-      cover: "/images/s4img1.png",
+      cover: "/images/s1img2.jpg",
       name: "Blue shoes on a guy",
       price: 10.95
     },
@@ -59,7 +59,7 @@ const homeData = {
     {
       id: "prod-5",
       category: "Bags",
-      cover: "/images/s4img3.jpg",
+      cover: "/images/s1img3.jpg",
       name: "Blue shoes on a guy",
       price: 10.95
     },
@@ -119,7 +119,7 @@ const stockData = [
   {
     id: "prod-3",
     category: "Suit men",
-    cover: "/images/s1img3.jpg",
+    cover: "/images/s4img1.png",
     name: "Fashion style",
     price: 23.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
@@ -127,7 +127,7 @@ const stockData = [
   {
     id: "prod-4",
     category: "Shoes",
-    cover: "/images/s4img1.png",
+    cover: "/images/s4img2.gif",
     name: "Fashion style",
     price: 12.96,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
@@ -135,7 +135,7 @@ const stockData = [
   {
     id: "prod-5",
     category: "Dresses",
-    cover: "/images/s4img2.gif",
+    cover: "/images/s1img3.jpg",
     name: "Fashion style",
     price: 65.00,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
@@ -143,7 +143,7 @@ const stockData = [
   {
     id: "prod-6",
     category: "Suit men",
-    cover: "/images/s4img3.jpg",
+    cover: "/images/s4img4.jpg",
     name: "Fashion style",
     price: 25.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet est. Mattis rhoncus urna neque viverra justo nec ultrices. Aliquam ultrices sagittis orci a scelerisque. In metus vulputate eu scelerisque felis imperdiet."
