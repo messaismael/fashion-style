@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 import { Product } from '../model/product.model';
 import { addProduct } from '../redux/actions';
+import { CartService } from '../services/cart/cart.services';
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const [isInCart, setIsInCart] = useState(false);
@@ -18,7 +19,10 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 
   const addToCart = () => {
     setIsInCart(!isInCart);
-    dispatch(addProduct(product.id));
+    let res = CartService.addItem(product);
+    if(res.success){
+      dispatch(addProduct());
+    }
   }
 
   return (

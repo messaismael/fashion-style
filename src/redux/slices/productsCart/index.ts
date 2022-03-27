@@ -1,36 +1,25 @@
 import { Product } from "../../../model/product.model";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { CartService } from "../../../services/cart/cart.services";
 
 
 interface IProducstCart {
-  products: string[];
+  count: number;
 };
 
 const initialState: IProducstCart = {
-  products: [],
+  count: CartService.cartSize
 };
 
 const productsCartSlice = createSlice({
   name: "productsCart",
   initialState,
   reducers: {
-    addProduct: {
-      reducer: (state, action: PayloadAction<string>) => {
-        if (!state.products.includes(action.payload)) {
-          state.products.push(action.payload);
-        }
-      },
-      prepare: (prod: string) => {
-        return { payload: prod }
-      }
+    addProduct: (state) => {
+      state.count++;
     },
-    removeProduct: {
-      reducer: (state, action: PayloadAction<string>) => {
-        state.products.splice(state.products.indexOf(action.payload), 1);
-      },
-      prepare: (prodId: string) => {
-        return { payload: prodId };
-      }
+    removeProduct: (state) => {
+      state.count--;
     }
   }
 });

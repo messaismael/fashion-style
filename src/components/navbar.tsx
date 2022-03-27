@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [showSearchBar, setShowSearchBar] = useState(false);
 
-    const productsCart = useSelector((state: RootState) => state.productCart.products);
+    const productsCart = useSelector((state: RootState) => state.productCart.count);
 
     const { height, width } = useWindowDimensions();
 
@@ -64,7 +64,7 @@ const NavBar: React.FC = () => {
                                 </NavDropdown>
                                 {!isLoggedIn && <Nav.Link eventKey={2} href="/login">Login</Nav.Link>}
                                 {isLoggedIn && <Nav.Link href="#profile"> <FontAwesomeIcon icon={faUserCircle} size="lg" /></Nav.Link>}
-                                <Nav.Link href="/cart"> <span className="cart-item"><FontAwesomeIcon className="mr-1" icon={faShoppingCart} size="sm" /> {productsCart.length ? <span className='cart-badge'>{productsCart.length}</span> : <></>}</span></Nav.Link>
+                                <Nav.Link href="/cart"> <span className="cart-item"><FontAwesomeIcon className="mr-1" icon={faShoppingCart} size="sm" /> {productsCart ? <span className='cart-badge'>{productsCart}</span> : <></>}</span></Nav.Link>
                             </Nav>
 
                         </div>
