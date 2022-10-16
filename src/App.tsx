@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Category from './components/category';
 import Home from './pages/home';
@@ -15,30 +15,18 @@ function App() {
 		<div className="app">
 			<div className='container-fluid'>
 				<Router>
-					<Switch>
-						<Route path='/product/:id'>
-							<ProductDetail />
-						</Route>
+					<Routes>
+						<Route path='/product/:id' element={<ProductDetail />} />
 						{
 							categoryList.map((categ, i) =>(
-								<Route path={'/'+ categ } key={i} >
-									<Category category={ categ } />
-								</Route>
+								<Route path={'/'+ categ } key={i} element={<Category category={ categ } />} />
 							))
 						}
-						<Route path='/cart' >
-							<CartPage />
-						</Route>
-						<Route path='/login' >
-							<Login />
-						</Route>
-						<Route path='/register' >
-							<Register />
-						</Route>
-						<Route path='/'>
-							<Home />
-						</Route>
-					</Switch>
+						<Route path='/cart' element={<CartPage />} />
+						<Route path='/login' element={<Login />} />
+						<Route path='/register' element={<Register />} />
+						<Route path='/'element={<Home />} />
+					</Routes>
 				</Router>
 			</div>
 		</div>

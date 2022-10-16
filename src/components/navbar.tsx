@@ -5,8 +5,6 @@ import { faSearch, faShoppingCart, faUserCircle } from '@fortawesome/free-solid-
 import { categoryList } from '../data';
 import Logo from './logo';
 import useWindowDimensions from '../utils/useWindowDimensions';
-import { useSelector } from 'react-redux';
-import { RootState } from '../redux/reducer';
 
 
 
@@ -14,7 +12,7 @@ const NavBar: React.FC = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [showSearchBar, setShowSearchBar] = useState(false);
 
-    const productsCart = useSelector((state: RootState) => state.productCart.count);
+    const productsCart = 0;
 
     const { height, width } = useWindowDimensions();
 
@@ -42,7 +40,7 @@ const NavBar: React.FC = () => {
                             </Button>
                             {showSearchBar &&
                                 <Nav className="mr-auto nav-form">
-                                    <Form inline>
+                                    <Form>
                                         <FormControl type="text" placeholder="Search..." className=" shadow bg-white rounded mr-sm-2 search-form" />
                                     </Form>
                                 </Nav>

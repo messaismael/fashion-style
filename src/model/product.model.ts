@@ -1,13 +1,17 @@
 export class Product {
-  public id: string;
-  public category?: string;
-  public cover: string;
-  public name?: string;
-  public price?: number;
-  description?: string;
+  id: string;
+  category: string;
+  cover: string;
+  name: string;
+  price: number;
+  description: string;
 
-  constructor () {
-    this.id = '';
-    this.cover ="https://via.placeholder.com/200";
+  constructor() {
+    this.id = "";
+    this.category = "";
+    this.name = "";
+    this.price = 0;
+    this.cover = "https://via.placeholder.com/200";
+    this.description = "";
   }
 }

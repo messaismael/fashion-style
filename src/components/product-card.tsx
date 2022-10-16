@@ -1,16 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap'
-import { useDispatch } from 'react-redux';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Product } from '../model/product.model';
 import { addProduct } from '../redux/actions';
 import { CartService } from '../services/cart/cart.services';
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const [isInCart, setIsInCart] = useState(false);
-  const router = useHistory();
+  const navigate = useNavigate();
   const productsCart = [];
-  const dispatch = useDispatch();
 
 
   useEffect(() => {
@@ -24,7 +22,6 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
     setIsInCart(!isInCart);
     let res = CartService.addItem(product);
     if(res.success){
-      dispatch(addProduct());
     }
   }
 

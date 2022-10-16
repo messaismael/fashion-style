@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import { Link, Router, useHistory } from 'react-router-dom';
+import { Link, Router, useNavigate } from 'react-router-dom';
 import { homeData } from '../data'
 import SoftSLider from '../components/slick-slider'
 import HeroCarousel from '../components/hero-carousel';
@@ -11,12 +11,12 @@ import NavBar from '../components/navbar';
 
 const Home:React.FC = () => {
 
-    let router = useHistory();
+    let navigate = useNavigate();
 
 
     const goToLink = (path: string) => {
 
-        router.push("/"+path);
+        navigate("/"+path);
     }
 
 
@@ -124,7 +124,7 @@ const Home:React.FC = () => {
                         {
                             homeData['section4'].filter((item, i)=>( i < 3)).map((item, index) => {
                                 return (
-                                    <Link to={`/product/${item.id}`}>
+                                    <Link to={`/product/${item.id}`} key={index}>
                                         <div className='entry' key={index} >
                                             <div className="entry-thumb">
                                                 <img src={item.cover} width='62' alt='entry thumb' />
@@ -146,7 +146,7 @@ const Home:React.FC = () => {
                             homeData['section4'].filter((item, i)=>( i < 3)).map((item, index) => {
                             
                                 return (
-                                    <Link to={`/product/${item.id}`}>
+                                    <Link to={`/product/${item.id}`} key={index}>
                                         <div className='entry' key={index} >
                                             <div className="entry-thumb">
                                                 <img src={item.cover} width='62' alt='entry thumb' />
@@ -167,7 +167,7 @@ const Home:React.FC = () => {
                             homeData['section4'].filter((item, i)=>( i < 3)).map((item, index) => {
                             
                                 return (
-                                    <Link to={`/product/${item.id}`}>
+                                    <Link to={`/product/${item.id}`} key={index}>
                                         <div className='entry' key={index} >
                                             <div className="entry-thumb">
                                                 <img src={item.cover} width='62' alt='entry thumb' />

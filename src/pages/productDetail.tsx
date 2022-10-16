@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Product } from '../model/product.model';
 import SoftSLider from '../components/slick-slider'
 
@@ -17,8 +17,8 @@ interface RouteParams {
 const ProductDetail:React.FC = () => {
   const [prod, setProd] = useState<Product>(new Product);
   const [numCart, setNumCart] = useState(1);
-  const params = useParams<RouteParams>();
-  const route = useHistory();
+  const params = useParams();
+  const navigate = useNavigate();
 
   
   useEffect(() => {
@@ -36,8 +36,8 @@ const ProductDetail:React.FC = () => {
     }
   }
   
-  const getProdById = (id:string) => {
-    let result = stockData.filter(i=> i.id === params.id);
+  const getProdById = (id:string | undefined) => {
+    let result:Product[] = stockData.filter(i=> i.id === params.id);
     console.log("filter results ...", result);
     setProd({...result[0]});
   }
