@@ -53,3 +53,4 @@ build/*
 .yarn
 .pnp.loader.mjs
 .pnp.cjs
+.vscode/settings.json
