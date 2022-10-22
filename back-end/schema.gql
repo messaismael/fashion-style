@@ -1,0 +1,103 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  """id of the user"""
+  id: String!
+
+  """the firstname of user)"""
+  firstName: String!
+
+  """the lastname of user)"""
+  lastName: String!
+
+  """the email of user)"""
+  email: String!
+
+  """the gender of user)"""
+  gender: String!
+
+  """the gender of user)"""
+  religion: String!
+
+  """the address of user)"""
+  address: String!
+
+  """the address of user)"""
+  age: Float!
+
+  """the role of user)"""
+  role: String!
+}
+
+type Product {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Query {
+  user(id: String!): User!
+  product(id: Int!): Product!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInput!): User!
+  updateUser(updateUserInput: UpdateUserInput!): User!
+  removeUser(id: String!): User!
+  createProduct(createProductInput: CreateProductInput!): Product!
+  updateProduct(updateProductInput: UpdateProductInput!): Product!
+  removeProduct(id: Int!): Product!
+}
+
+input CreateUserInput {
+  """first name of the user"""
+  firstName: String!
+
+  """last name of the user"""
+  lastName: String!
+
+  """email of the user"""
+  email: String!
+
+  """email of the user"""
+  address: String!
+
+  """role of the user"""
+  role: String!
+
+  """Password of user"""
+  password: String!
+}
+
+input UpdateUserInput {
+  """first name of the user"""
+  firstName: String
+
+  """last name of the user"""
+  lastName: String
+
+  """email of the user"""
+  email: String
+
+  """email of the user"""
+  address: String
+
+  """role of the user"""
+  role: String
+
+  """Password of user"""
+  password: String
+  id: String!
+}
+
+input CreateProductInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateProductInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
