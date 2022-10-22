@@ -32,8 +32,20 @@ type User {
 }
 
 type Product {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  """id of the product"""
+  id: String!
+
+  """product name)"""
+  name: String!
+
+  """product description)"""
+  description: String!
+
+  """product price)"""
+  price: Int!
+
+  """quantity in stock"""
+  stock: Int!
 }
 
 type Query {
