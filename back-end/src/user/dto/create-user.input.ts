@@ -11,6 +11,9 @@ export class CreateUserInput {
   @Field(() => String, { description: 'email of the user' })
   email: string;
 
+  @Field(() => String, { description: 'the gender of user)' })
+  gender: 'M' | 'F';
+
   @Field(() => String, { description: 'email of the user' })
   address: string;
 

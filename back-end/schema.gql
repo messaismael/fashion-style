@@ -18,17 +18,14 @@ type User {
   """the gender of user)"""
   gender: String!
 
-  """the gender of user)"""
-  religion: String!
-
   """the address of user)"""
   address: String!
 
-  """the address of user)"""
-  age: Float!
-
   """the role of user)"""
   role: String!
+
+  """Password of user"""
+  password: String!
 }
 
 type Product {
@@ -72,6 +69,9 @@ input CreateUserInput {
   """email of the user"""
   email: String!
 
+  """the gender of user)"""
+  gender: String!
+
   """email of the user"""
   address: String!
 
@@ -91,6 +91,9 @@ input UpdateUserInput {
 
   """email of the user"""
   email: String
+
+  """the gender of user)"""
+  gender: String
 
   """email of the user"""
   address: String

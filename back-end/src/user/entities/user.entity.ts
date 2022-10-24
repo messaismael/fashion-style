@@ -25,18 +25,14 @@ export class User {
   gender: 'M' | 'F';
 
   @Column()
-  @Field(() => String, { description: 'the gender of user)' })
-  religion: string;
-
-  @Column()
   @Field(() => String, { description: 'the address of user)' })
   address: string;
-
-  @Column()
-  @Field(() => Number, { description: 'the address of user)' })
-  age: number;
 
   @Column({ default: 'SIMPLE_USER' })
   @Field(() => String, { description: 'the role of user)' })
   role: string;
+
+  @Column()
+  @Field(() => String, { description: 'Password of user' })
+  password: string;
 }
