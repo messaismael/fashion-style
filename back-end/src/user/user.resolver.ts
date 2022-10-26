@@ -13,7 +13,7 @@ export class UserResolver {
     return this.userService.create(createUserInput);
   }
 
-  @Query(() => [User], { name: 'user' })
+  @Query(() => [User], { name: 'getAllUsers' })
   findAll() {
     return this.userService.findAll();
   }
@@ -29,7 +29,7 @@ export class UserResolver {
   }
 
   @Mutation(() => User)
-  removeUser(@Args('id', { type: () => String }) id: string) {
+  deleteUser(@Args('id', { type: () => String }) id: string) {
     return this.userService.remove(id);
   }
 }
