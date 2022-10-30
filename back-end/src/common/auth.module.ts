@@ -1,11 +1,12 @@
 import { forwardRef, Module } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { JwtModule, JwtService } from '@nestjs/jwt';
+import { JwtModule } from '@nestjs/jwt';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from 'src/user/entities/user.entity';
 import { UserModule } from 'src/user/user.module';
 import { UserService } from 'src/user/user.service';
-import { AuthService } from './services/auth/auth.service';
+import { AuthResolver } from './auth/auth.resolver';
+import { AuthService } from './auth/auth.service';
 
 @Module({
   imports: [
@@ -19,7 +20,7 @@ import { AuthService } from './services/auth/auth.service';
     }),
     UserModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, AuthResolver, UserService],
   exports: [AuthService],
 })
 export class AuthModule {}
