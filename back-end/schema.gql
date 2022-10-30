@@ -46,12 +46,22 @@ type Product {
 }
 
 type Query {
+  login(loginUser: LoginUserInput!): String!
   getAllUsers: [User!]!
   user(id: String!): User!
   product(id: Int!): Product!
 }
 
+input LoginUserInput {
+  """email of the user"""
+  email: String!
+
+  """password of the user"""
+  password: String!
+}
+
 type Mutation {
+  register(createUser: CreateUserInput!): User!
   createUser(createUserInput: CreateUserInput!): User!
   updateUser(updateUserInput: UpdateUserInput!): User!
   deleteUser(id: String!): User!

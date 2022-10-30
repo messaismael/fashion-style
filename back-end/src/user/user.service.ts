@@ -16,7 +16,16 @@ export class UserService {
     const saltOrRounds = 10;
     const password = createUserInput.password;
     createUserInput.password = await bcrypt.hash(password, saltOrRounds);
-    return this.usersRepository.create(createUserInput);
+    console.log(createUserInput);
+    console.log(password);
+
+    const user = this.usersRepository.create(createUserInput);
+    console.log(user);
+
+    return this.usersRepository.save(user);
+    /*    }else{
+      throw new BadRequestException(`Email or password are invalid`);
+    } */
   }
 
   findAll() {

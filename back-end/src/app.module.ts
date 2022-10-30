@@ -10,6 +10,7 @@ import { ProductModule } from './product/product.module';
 import { typeOrmAsyncConfig } from './config/typeorm.config';
 import { User } from './user/entities/user.entity';
 import { Product } from './product/entities/product.entity';
+import { AuthModule } from './common/auth.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { Product } from './product/entities/product.entity';
     }),
     TypeOrmModule.forRootAsync(typeOrmAsyncConfig),
     TypeOrmModule.forFeature([User, Product]),
+    AuthModule,
     UserModule,
     ProductModule,
   ],
