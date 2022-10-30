@@ -16,11 +16,8 @@ export class UserService {
     const saltOrRounds = 10;
     const password = createUserInput.password;
     createUserInput.password = await bcrypt.hash(password, saltOrRounds);
-    console.log(createUserInput);
-    console.log(password);
 
     const user = this.usersRepository.create(createUserInput);
-    console.log(user);
 
     return this.usersRepository.save(user);
     /*    }else{

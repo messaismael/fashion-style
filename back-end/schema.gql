@@ -45,8 +45,13 @@ type Product {
   stock: Int!
 }
 
+type LoggedUserOutput {
+  """Generated access_token of the user"""
+  access_token: String!
+}
+
 type Query {
-  login(loginUser: LoginUserInput!): String!
+  login(loginData: LoginUserInput!): LoggedUserOutput!
   getAllUsers: [User!]!
   user(id: String!): User!
   product(id: Int!): Product!
@@ -61,8 +66,7 @@ input LoginUserInput {
 }
 
 type Mutation {
-  register(createUser: CreateUserInput!): User!
-  createUser(createUserInput: CreateUserInput!): User!
+  register(registerData: CreateUserInput!): User!
   updateUser(updateUserInput: UpdateUserInput!): User!
   deleteUser(id: String!): User!
   createProduct(createProductInput: CreateProductInput!): Product!
