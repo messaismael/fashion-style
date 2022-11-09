@@ -65,33 +65,3 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
     charset: 'utf8mb4_unicode_ci',
   },
 };
-
-export default class TypeOrmConfig {
-  static getOrmConfig(configService: ConfigService): TypeOrmModuleOptions {
-    return {
-      type: 'postgres',
-
-      host: configService.get('FS_HOST'),
-
-      port: configService.get<number>('FS_PORT'),
-
-      username: configService.get('FS_USERNAME'),
-
-      password: configService.get('FS_PASSWORD'),
-
-      database: configService.get('FS_DB'),
-
-      entities: [`${__dirname}/../**/*.entity.{ts,js}`],
-
-      migrations: [`${__dirname}/../migrations/*.{ts,js}`],
-
-      logging: true,
-
-      synchronize: true,
-
-      cli: {
-        migrationsDir: 'src/migrations',
-      },
-    };
-  }
-}

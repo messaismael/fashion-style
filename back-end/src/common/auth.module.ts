@@ -7,6 +7,7 @@ import { UserModule } from 'src/user/user.module';
 import { UserService } from 'src/user/user.service';
 import { AuthResolver } from './auth/auth.resolver';
 import { AuthService } from './auth/auth.service';
+import { JwtStrategy } from './auth/stategy/jwt.strategy';
 
 @Module({
   imports: [
@@ -20,7 +21,7 @@ import { AuthService } from './auth/auth.service';
     }),
     UserModule,
   ],
-  providers: [AuthService, AuthResolver, UserService],
+  providers: [AuthService, AuthResolver, UserService, JwtStrategy],
   exports: [AuthService],
 })
 export class AuthModule {}
